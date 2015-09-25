@@ -1,0 +1,250 @@
+<?php
+/*
+ *    
+ *      Copyright 2009 Antonio Gomez Garcia <agomeztron@yahoo.es>
+ *      
+ * Este programa es software libre; lo puedes redistribuir y/o modificar
+ * bajo los terminos de la licencia publica GNU, publicada por la Free 
+ * Software Foundation; ya sea la version 2 de la licencia, o cualquier 
+ * version posterior.
+ * 
+ * Este programa se esta distribuyendo con la esperanza de que sea util 
+ * a la comunidad, pero SIN NINGUNA GARANTIA, ¡RECLAMACIONES, AL MAESTRO 
+ * ARMERO!, que decian en la mili. Si te quedas con la duda, examina los
+ * terminos de la licencia GNU
+ * 
+ * Deberias haber recibido una copia de la Licencia Publica General GNU 
+ * junto con esta aplicacion. Si no es asi, y te da pereza tirar de In-
+ * ternet, escribe a: Free Software Foundation, Inc., 51 Franklin Street
+ * , Fifth Floor, Boston, MA 02110-1301,USA.
+ * 
+ */
+?>
+<?php require ('fpdf.php');
+
+Require ("../config.php");
+$grupo=$_POST['grupo'];
+$alumno=$_POST['alumno'];
+function Conectarse()
+{require ('../config.php');
+   if (!($link=mysql_connect($servidor,$usuario,$contra)))
+   {
+      echo "Error conectando a la base de datos.";
+      exit();
+   }
+   if (!mysql_select_db($base,$link))
+   {
+      echo "Error seleccionando la base de datos.";
+      exit();
+   }
+   return $link;
+}
+class PDF extends FPDF
+{
+
+
+//Pie de página
+function Footer()
+{require ("../config.php");
+    //Posición: a 1,5 cm del final
+    $this->SetY(-15);
+    //Arial italic 8
+    $this->SetFont('Arial','I',8);
+    //Número de página
+    $this->Cell(0,10,$direccion,0,0,'C');
+}
+}
+
+$pdf=new PDF;
+$link=Conectarse();
+
+	    $result3 = mysql_query("SELECT * FROM pti WHERE id=$alumno",$link);
+
+while($row4 = mysql_fetch_array($result3)) {
+$idalumno2=$row4['idalumno'];
+$nombre2=$row4['NOMBRE'];
+$curso2=$row4['CURSO'];
+$tutor2=$row4['TUTOR'];
+$materia3=$row4['MATERIA'];
+ $resultmateria = mysql_query("SELECT * FROM materias WHERE materia='$materia3'",$link);
+while($rowmateria = mysql_fetch_array($resultmateria)) {
+$materia2=$rowmateria['nombre'];}
+
+$calificacion2=$row4['CALIFICACION'];
+$profesor2=$row4['PROFESOR'];
+$acnee2=$row4['ACNEE'];
+$objetor2=$row4['OBJETOR'];
+$acneae2=$row4['ACNEAE'];
+$diver2=$row4['DIVER'];
+$absen2=$row4['ABSEN'];
+$tarde2=$row4['TARDE'];
+$interc2=$row4['INTERC'];
+$vago2=$row4['VAGO'];
+$dificultades2=$row4['DIFICULTADES'];
+$rec12=$row4['rec1'];
+$rec22=$row4['rec2'];
+$rec32=$row4['rec3'];
+$rec42=$row4['rec4'];
+$rec52=$row4['rec5'];
+$rec62=$row4['rec6'];
+$rec72=$row4['rec7'];
+$rec82=$row4['rec8'];
+$rec92=$row4['rec9'];
+$rec102=$row4['rec10'];
+$rec112=$row4['rec11'];
+$rec122=$row4['rec12'];
+$evc12=$row4['evc1'];
+$evc22=$row4['evc2'];
+$evc32=$row4['evc3'];
+$evc42=$row4['evc4'];
+$evc52=$row4['evc5'];
+$evc62=$row4['evc6'];
+$evc72=$row4['evc7'];
+$evc82=$row4['evc8'];
+$evc92=$row4['evc9'];
+$evc102=$row4['evc10'];
+$evc112=$row4['evc11'];
+$evc122=$row4['evc12'];
+$otro2=$row4['OTRO'];
+$actividades2=$row4['ACTIVIDADES'];
+$comp12=$row4['COMP1'];
+$comp22=$row4['COMP2'];
+$comp32=$row4['COMP3'];
+$comp42=$row4['COMP4'];
+$comp52=$row4['COMP5'];
+$comp62=$row4['COMP6'];
+$comp72=$row4['COMP7'];
+$comp82=$row4['COMP8'];
+$comp92=$row4['COMP9'];
+$calificapti2=$row4['CALIFICAPTI'];
+$observaciones2=$row4['OBSERVACIONES'];
+
+$contenidos2="CONTENIDOS".$materia3.$curso2;
+ $contenidos = mysql_query("SELECT * FROM $contenidos2; ",$link);
+
+while($row5 = mysql_fetch_array($contenidos)) {
+$b1=$row5['b1'];
+$b2=$row5['b2'];
+$b3=$row5['b3'];
+$b4=$row5['b4'];
+$b5=$row5['b5'];
+$b6=$row5['b6'];
+$b7=$row5['b7'];
+$b8=$row5['b8'];
+$b9=$row5['b9'];
+$b10=$row5['b10'];
+$b11=$row5['b11'];
+$b11=$row5['b12'];
+
+$encabezamiento='PLAN DE TRABAJO INDIVIDUALIZADO'."\n".'(Decreto 69/2007,Artículo 10)'."\n".'MATERIA: '.$materia2;
+$pdf->AddPage();
+$pdf->SetFont('Arial','B',12);
+$pdf->Image('logoclm.jpg',10,10);
+
+$pdf->SetLineWidth(0.5);
+$pdf->Cell(50,10,'');
+$pdf->SetFillColor(150,150,150);
+
+$pdf->Multicell(90,8,$encabezamiento,1,'C',1,1);
+$pdf->SETXY(10,50);
+
+$pdf->SetFont('Arial','B',10);
+$pdf->Multicell(160,5,'PERFIL ACADÉMICO DEL ALUMNO. GRUPO: '.$grupo."\n",1,'C',1);
+
+$pdf->SetFont('Arial','',8);
+$pdf->SETXY(10,55);
+$pdf->Multicell(80,5,'ALUMNO: '.$nombre2."\n".'CURSO: '.$curso2."\n".'TUTOR/-A: '.$tutor2,1);
+$pdf->SETXY(90,55);
+$pdf->Multicell(80,5,'MATERIA: '.$materia2."\n".'CALIFICACIÓN: '.$calificacion2."\n".'PROFESOR/-A: '.$profesor2,1);
+$perfilacademico="";
+
+if ($acnee2==1){$perfilacademico=$perfilacademico."El alumno es ACNEE.\n";}
+if ($objetor2==1){$perfilacademico=$perfilacademico."El alumno es objetor escolar.  \n";}
+if ($acneae2==1){$perfilacademico=$perfilacademico."El alumno es ACNEAE.  \n";}
+if ($diver2==1){$perfilacademico=$perfilacademico."Pertenece a un programa de Diversificación Curricular. \n";}
+if ($absen2==1){$perfilacademico=$perfilacademico."Ha presentado problemas de absentismo escolar. \n";}
+if ($tarde2==1){$perfilacademico=$perfilacademico."Se ha incorporado tardíamente.  \n";}
+if ($interc2==1){$perfilacademico=$perfilacademico."Debe tenerse en cuenta el factor de interculturalidad. \n";}
+if ($vago2==1){$perfilacademico=$perfilacademico."El alumno ha sido calificado por sus profesores como vago o perezoso. \n";}
+if ($dific2==1){$perfilacademico=$perfilacademico."Existen dificultades en el aprendizaje.  \n";}
+if (isset($otro2)){$perfilacademico=$perfilacademico.$otro2;}
+if($perfilacademico==""){$perfilacademico=$perfilacademico."El alumno no presenta problemas de aprendizaje a tener en cuenta.";}
+$pdf->Multicell(160,5,$perfilacademico,1);
+$pdf->SetFont('Arial','B',10);
+$pdf->Multicell(160,5,'CONTENIDOS A RECUPERAR Y MÉTODOS DE EVALUACIÓN'."\n",1,'C',1);
+$pdf->SetFont('Arial','',8);
+$listacontenidos="";
+if ($rec12==1){$listacontenidos=$listacontenidos.$b1.": ".$evc12.".\n";}
+if ($rec22==1){$listacontenidos=$listacontenidos.$b2.": ".$evc22.".\n";}
+if ($rec32==1){$listacontenidos=$listacontenidos.$b3.": ".$evc32.".\n";}
+if ($rec42==1){$listacontenidos=$listacontenidos.$b4.": ".$evc42.".\n";}
+if ($rec52==1){$listacontenidos=$listacontenidos.$b5.": ".$evc52.".\n";}
+if ($rec62==1){$listacontenidos=$listacontenidos.$b6.": ".$evc62.".\n";}
+if ($rec72==1){$listacontenidos=$listacontenidos.$b7.": ".$evc72.".\n";}
+if ($rec82==1){$listacontenidos=$listacontenidos.$b8.": ".$evc82.".\n";}
+if ($rec92==1){$listacontenidos=$listacontenidos.$b9.": ".$evc92.".\n";}
+if ($rec102==1){$listacontenidos=$listacontenidos.$b10.": ".$evc102.".\n";}
+if ($rec112==1){$listacontenidos=$listacontenidos.$b11.": ".$evc112.".\n";}
+if ($rec122==1){$listacontenidos=$listacontenidos.$b12.": ".$evc122.".\n";}
+$pdf->Multicell(160,5,$listacontenidos,1);
+$pdf->SetFont('Arial','B',10);
+$pdf->Multicell(160,5,'ORGANIZACIÓN DEL PROCESO DE ENSEÑANZA-APRENDIZAJE'."\n",1,'C',1);
+$pdf->SetFont('Arial','',10);
+$pdf->Multicell(160,5,'ACTIVIDADES INDIVIDUALES A REALIZAR PARA SUPERAR LA EVALUACIÓN NEGATIVA'."\n",1,'C');
+$pdf->Multicell(160,5,$actividades2,1);
+$pdf->SetFont('Arial','B',10);
+$pdf->Multicell(160,5,'COMPETENCIAS'."\n",1,'C',1);
+$pdf->SetFont('Arial','',10);
+$pdf->Multicell(160,5,'COMPETENCIAS ALCANZADAS'."\n",1,'C',1);
+
+$competsi="";
+$competno="";
+$comp1="1. Competencia lingüística \n"; 
+$comp2="2. Competencia matemática \n";
+$comp3="3. Competencia en conocimiento del medio físico \n";
+$comp4="4. Competencia para el tratamiento y la información digital \n";
+$comp5="5. Competencia social y ciudadana \n";
+$comp6="6. Competencia cultural y artística \n";
+$comp7="7. Competencia para aprender a aprender \n";
+$comp8="8. Competencia en autonomía e iniciativa personal \n";
+$comp9="9. Competencia emocional \n";
+if($comp12==1){$competsi=$competsi.$comp1;}else{$competno=$competno.$comp1;}
+if($comp22==1){$competsi=$competsi.$comp2;}else{$competno=$competno.$comp2;}
+if($comp32==1){$competsi=$competsi.$comp3;}else{$competno=$competno.$comp3;}
+if($comp42==1){$competsi=$competsi.$comp4;}else{$competno=$competno.$comp4;}
+if($comp52==1){$competsi=$competsi.$comp5;}else{$competno=$competno.$comp5;}
+if($comp62==1){$competsi=$competsi.$comp6;}else{$competno=$competno.$comp6;}
+if($comp72==1){$competsi=$competsi.$comp7;}else{$competno=$competno.$comp7;}
+if($comp82==1){$competsi=$competsi.$comp8;}else{$competno=$competno.$comp8;}
+if($comp92==1){$competsi=$competsi.$comp9;}else{$competno=$competno.$comp9;}
+$pdf->SetFont('Arial','',8);
+$pdf->Multicell(160,5,$competsi."\n",1);
+$pdf->SetFont('Arial','',10);
+$pdf->Multicell(160,5,'COMPETENCIAS NO ALCANZADAS'."\n",1,'C',1);
+$pdf->SetFont('Arial','',8);
+$pdf->Multicell(160,5,$competno."\n",1);
+$pdf->Ln(10);
+$pdf->SetFont('Arial','B',10);
+$pdf->Multicell(160,5,'CALIFICACIÓN DEL PLAN DE TRABAJO ACTUALIZADO: '.$calificapti2."\n",0,'',1);
+
+$pdf->Ln(10);
+$pdf->Multicell(160,5,'OBSERVACIONES: '."\n",0,'',1);
+$pdf->SetFont('Arial','B',10);
+$pdf->Multicell(160,5,$observaciones2,1,'',0);
+$pdf->SetFont('Arial','',8);
+$pdf->Ln(15);
+$pdf->Cell(120,5);
+$pdf->Cell(60,5,'El profesor/-a:____________________________');
+
+}}
+//Determinar un nombre temporal de fichero en el directorio actual
+$file = basename(tempnam('.', 'tmp'));
+rename($file, $file.'.pdf');
+$file .= '.pdf';
+//Guardar el PDF en un fichero
+$pdf->Output($file, 'F');
+
+//Redirección
+header('Location: '.$file);
+
+?>

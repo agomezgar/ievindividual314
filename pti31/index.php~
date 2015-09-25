@@ -1,0 +1,69 @@
+<?php 
+if (!file_exists("config.php")){
+header ("Location: ./instalacion/");
+}?>
+<?php
+/*
+ *    
+ *      Copyright 2009 Antonio Gomez Garcia <agomeztron@yahoo.es>
+ *      
+ * Este programa es software libre; lo puedes redistribuir y/o modificar
+ * bajo los terminos de la licencia publica GNU, publicada por la Free 
+ * Software Foundation; ya sea la version 2 de la licencia, o cualquier 
+ * version posterior.
+ * 
+ * Este programa se esta distribuyendo con la esperanza de que sea util 
+ * a la comunidad, pero SIN NINGUNA GARANTIA, ¡RECLAMACIONES, AL MAESTRO 
+ * ARMERO!, que decian en la mili. Si te quedas con la duda, examina los
+ * terminos de la licencia GNU
+ * 
+ * Deberias haber recibido una copia de la Licencia Publica General GNU 
+ * junto con esta aplicacion. Si no es asi, y te da pereza tirar de In-
+ * ternet, escribe a: Free Software Foundation, Inc., 51 Franklin Street
+ * , Fifth Floor, Boston, MA 02110-1301,USA.
+ * 
+ */
+?>
+<?php
+function CleanFiles($dir)
+{
+    //Borrar los ficheros temporales
+    $t = time();
+    $h = opendir($dir);
+    while($file=readdir($h))
+    {
+        if(substr($file,0,3)=='tmp' && substr($file,-4)=='.pdf')
+        {
+            $path = $dir.'/'.$file;
+            if($t-filemtime($path)>3600)
+                @unlink($path);
+        }
+    }
+    closedir($h);
+}
+CleanFiles("evaluacion");
+
+?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" />
+<title>INFORMES DE EVALUACION</title>
+</head>
+
+<body>
+<p><img src="LOGO.jpg" width="100%" height="115" /></p>
+<form action="procesaclaves.php" method="post" name="claves">
+  <label for="textfield">Nombre:</label>
+  <input name="nombre" type="text" id="nombre" maxlength="10" />
+  <label for="label">Contraseña:</label>
+  <input name="contra" type="password" id="contra" maxlength="10" />
+  <p>&nbsp;</p>
+  <p>
+    <label>
+    <input type="submit" name="Submit" value="ENVIAR" />
+    </label>
+  <p>&nbsp; </p>
+</form>
+</body>
+</html>
