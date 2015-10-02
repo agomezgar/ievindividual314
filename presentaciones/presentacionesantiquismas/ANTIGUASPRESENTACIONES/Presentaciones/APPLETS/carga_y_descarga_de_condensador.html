@@ -1,0 +1,140 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="es" lang="es"><head><title>Electricidad y Magnetismo - Practicas de Laboratorio.</title>
+	
+		<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+		<link rel="stylesheet" href="carga_y_descarga_de_condensador_files/default.css" type="text/css"></head>
+	
+
+<body>
+<div id="cabecera">
+	<h1>Electricidad y Magnetismo.</h1>
+	<h2>Practicas de Laboratorio.</h2>
+</div>
+
+<div id="menu">
+	<p><a title="Pagina principal" href="http://www.studiow3.com/em/inicio.html" accesskey="i">Inicio</a> | <a title="Applets" href="http://www.studiow3.com/em/applets.html" accesskey="a">Applets</a> | <a title="Simulación" href="http://www.studiow3.com/em/simulacion.html" accesskey="s">Simulación</a> | <a title="Reportes de laboratorio" href="http://www.studiow3.com/em/reportes.html" accesskey="r">Reportes</a> | <a title="Mapa del sitio" href="http://www.studiow3.com/em/mapa.html" accesskey="m">Mapa del sitio</a> | <a title="contactame" href="http://www.studiow3.com/em/contacto.html" accesskey="c">Contacto</a></p>
+</div>	
+
+
+<div id="cuerpo">
+	<div id="contenido">
+		<div class="informacion">
+			&nbsp;
+			<h2>Carga y descarga de un condensador.</h2>
+			<h3>Carga de un condensador.</h3>
+			<p>Considérese
+el circuito en serie de la figura. Inicialmente el condensador está
+descargado. Si se cierra el interruptor I la carga empieza a fluir
+produciendo corriente en el circuito, el condensador se empieza a
+cargar. Una vez que se alcanza la carga máxima la corriente cesa en el
+circuito.</p>
+			<img class="der" alt="figura 1" src="carga_y_descarga_de_condensador_files/f145.gif">
+			<p>En el circuito de la figura tendremos que la suma:</p>
+			<p><em>V<sub>ab</sub> + V<sub>bc</sub> + V<sub>ca</sub> = 0</em></p>
+			<ul>
+				<li>El extremo a tiene un potencial mayor que el extremo <em>b</em> de la resistencia <em>R</em> ya que la corriente fluye de <strong>a</strong> a <strong>b</strong>. De acuerdo a la ley de Ohm <em>V<sub>ab</sub> = iR</em>.</li>
+				<li>La placa positiva del condensador <strong>b</strong> tiene mayor potencial que la placa negativa <strong>c</strong>, de modo que <em>V<sub>bc</sub> = q/C</em>.</li>
+				<li>El terminal positivo de la batería <strong>a</strong> tiene mayor potencial que el terminal negativo <strong>c</strong>, de modo que <em>V<sub>ca</sub> = -Ve</em>, donde <em>Ve</em> es la fem de la batería.</li>
+			</ul>
+			<p>La ecuación del circuito es:</p>
+			<p><em>iR + q/C - Ve = 0</em></p>
+			<p>Teniendo en cuenta que la intensidad se define como la carga que atraviesa la sección del circuito en la unidad de tiempo, <em>i = dq/dt</em>, tendremos la siguiente ecuación para integrar:</p>
+			<p><img alt="formula 1" src="carga_y_descarga_de_condensador_files/f146.gif"></p>
+			<p><img alt="formula 2" src="carga_y_descarga_de_condensador_files/f147.gif"></p>
+			<p>Derivando con respecto al tiempo, obtenemos la intensidad en función del tiempo:</p>
+			<p><img alt="formula 3" src="carga_y_descarga_de_condensador_files/f148.gif"></p>
+			<p>La carga tiende hacia un valor máximo <em>C·V<sub>e</sub></em> al cabo de un cierto tiempo, teóricamente infinito.</p>
+			<p>La intensidad disminuye exponencialmente con el tiempo, hasta que se hace cero cuando se alcanza la carga máxima.</p>
+			<p>La cantidad <em>RC</em> que aparece en el denominador de <em>t</em> se denomina constante de tiempo del circuito. Este representa el tiempo que tomará a la corriente para decrecer hasta <em>1/e</em> de su valor inicial.</p>
+			<p>Un
+tubo-capilar alimentado por un flujo constante producido por un frasco
+de Mariotte es la analogía hidráulica de la carga de un condensador.</p>
+			<h3>Actividades.</h3>
+			<p>Se introduce:</p>
+			<ol>
+				<li>La capacidad <em>C</em> del condensador, actuando sobre la barra de desplazamiento titulada <strong>Condensador</strong>.</li>
+				<li>La resistencia <em>R</em>, actuando sobre la barra de desplazamiento titulada <strong>Resistencia</strong>.</li>
+				<li>La fem <em>V<sub>e</sub></em> de la batería está fijada en el valor de 10.</li>
+				<li>Se pulsa el botón titulado <strong>Empieza</strong>.</li>
+			</ol>
+			<p>Se
+observa la carga del condensador, su color pasa gradualmente de blanco
+(sin carga) a rojo (carga positiva) y azul (carga negativa). A la
+derecha del applet, se traza la gráfica de la carga <em>q</em> y de la intensidad <em>i</em> en función del tiempo.</p>
+			<p>Observar:</p>
+			<ul>
+				<li>Que la carga máxima no depende de la resistencia <em>R</em>.</li>
+				<li>Que la intensidad máxima no depende de la capacidad <em>C</em>.</li>
+			</ul>
+			<p>Elegir dos valores de la resistencia <em>R<sub>1</sub></em> y <em>R<sub>2</sub></em> y dos valores de la capacidad <em>C<sub>1</sub></em> y <em>C<sub>2</sub></em> de modo que <em>R<sub>1</sub></em>.<em>C<sub>1</sub></em> = <em>R<sub>2</sub></em>.<em>C<sub>2</sub></em></p>
+			<applet class="applet" archive="rc1.jar" code="rc1.RcApplet1.class" align="middle" height="400" width="550">LineasApplet aparecerá en un explorador compatible JDK 1.1</applet>
+			<h3>Descarga de un condensador.</h3>
+			<p>Consideremos ahora el circuito que consta de un condensador, inicialmente cargado con carga <em>Q</em>, y una resistencia <em>R</em>, y se cierra el interruptor I.</p>
+			<img class="der" alt="figura 2" src="carga_y_descarga_de_condensador_files/f149.gif">
+			<p>La ecuación del circuito será la siguiente:</p>
+			<p><em>V<sub>ab</sub> + V<sub>ba</sub> = 0</em></p>
+			<ul>
+				<li>Como la corriente va de <strong>a</strong> hacia <strong>b</strong>, el potencial de <em>a</em> es más alto que el potencial de <em>b</em>. Por la ley de Ohm <em>V<sub>ab</sub> = iR</em>.</li>
+				<li>En el condensador la placa positiva <strong>a</strong> tiene más potencial que la negativa <strong>b</strong>, de modo que <em>V<sub>ba</sub> = -q/C</em>.</li>
+			</ul>
+			<p>La ecuación del circuito es:</p>
+			<p><em>iR-q/C = 0</em></p>
+			<p>Como la carga disminuye con el tiempo <em>i = -dq/dt</em>. La ecuación a integrar es:</p>
+			<p><img alt="formula 4" src="carga_y_descarga_de_condensador_files/f150.gif"></p>
+			<p>La
+carga del condensador disminuye exponencialmente con el tiempo.
+Derivando con respecto del tiempo, obtenemos la intensidad, en el
+sentido indicado en la figura.</p>
+			<p><img alt="formula 5" src="carga_y_descarga_de_condensador_files/f151.gif"></p>
+			<p>Que disminuye exponencialmente con el tiempo.</p>
+			<p>La descarga tubo-capilar es la analogía hidráulica de la descarga del condensador.</p>
+			<h3>Actividades.</h3>
+			<p>Se introduce:</p>
+			<ol>
+				<li>La capacidad <em>C</em> del condensador, actuando sobre la barra de desplazamiento titulada <strong>Condensador</strong>.</li>
+				<li>La resistencia <em>R</em>, actuando sobre la barra de desplazamiento titulada <strong>Resistencia</strong>.</li>
+				<li>La carga inicial <em>Q</em> del condensador se ha fijado en el programa.</li>
+				<li>Se pulsa el botón titulado <strong>Empieza</strong>.</li>
+			</ol>
+			<p>Se
+observa la descarga del condensador, su color pasa gradualmente de rojo
+(carga positiva) y azul (carga negativa) a blanco (descargado) . A la
+derecha del applet, se traza la gráfica de la carga <em>q</em> y de la intensidad <em>i</em> en función del tiempo.</p>
+			<p>Elegir dos valores de la resistencia <em>R<sub>1</sub></em> y <em>R<sub>2</sub></em> y dos valores de la capacidad <em>C<sub>1</sub></em> y <em>C<sub>2</sub></em> de modo que <em>R<sub>1</sub></em>.<em>C<sub>1</sub></em> = <em>R<sub>2</sub></em>.<em>C<sub>2</sub></em></p>
+			<p>Observar como decrece la carga y la intensidad.</p>
+			<applet class="applet" archive="rc2.jar" code="rc2.RcApplet2.class" align="middle" height="400" width="550">LineasApplet aparecerá en un explorador compatible JDK 1.1</applet>
+			<h3>Carga y descarga de un condensador.</h3>
+			<img class="der" alt="figura 3" src="carga_y_descarga_de_condensador_files/f152.gif">
+			<p>Cuando
+el circuito RC se conecta a un generador de señales cuadradas, podemos
+observar en un osciloscopio el proceso de carga y descarga.</p>
+			<img class="center" alt="figura 4" src="carga_y_descarga_de_condensador_files/f153.gif">
+			<p>Como se ve en la figura, durante el primer semiperiodo de la señal la fem tiene un valor constante e igual a <em>V<sub>0</sub></em>. El condensador se carga durante un tiempo <em>P/2</em>.</p>
+			<p>La carga <em>q<sub>1</sub></em> final del condensador en el instante <em>t = P/2</em> se calcula a partir de la fórmula:</p>
+			<p><img alt="formula 6" src="carga_y_descarga_de_condensador_files/f154.gif"></p>
+			<p>En el instante <em>t = P/2</em> la fem se hace cero, el condensador se descarga. La carga del condensador <em>q<sub>2</sub></em> en el instante <em>t = P</em> se calcula a partir de la fórmula:</p>
+			<p><img alt="formula 7" src="carga_y_descarga_de_condensador_files/f155.gif"></p>
+			<p>En el siguiente proceso de carga, la integración no es entre los límites <em>0</em> y <em>q</em>, sino entre la carga remanente <em>q<sub>2</sub></em> y <em>q</em>.</p>
+			<p><img alt="formula 8" src="carga_y_descarga_de_condensador_files/f156.gif"></p>
+			<p>Calculamos la carga final <em>q<sub>3</sub></em> en el instante <em>t = P + P/2</em>. Y así, sucesivamente.</p>
+			<h3>Actividades.</h3>
+			<p>La carga y descarga del condensador la podemos observar, introduciendo una señal cuadrada en el circuito <em>RC</em>, y haciendo llegar la señal resultante a un osciloscopio.</p>
+			<p>Se introducen los siguientes datos:</p>
+			<ol>
+				<li>La resistencia <em>R</em> en <em>W</em>.</li>
+				<li>La capacidad <em>C</em> en mF(10<sup>-6</sup>F).</li>
+				<li>La fem <em>V<sub>e</sub></em> en <em>V</em>.</li>
+				<li>La frecuencia <em>f</em> en Hz de la señal cuadrada. El periodo <em>P</em> es la inversa de la frecuencia, <em>P = 1/f</em>. Por ejemplo, si la frecuencia es 2000 Hz el periodo es 0.0005 s ó 0.5 ms (milisegundos).</li>
+				<li>Se pulsa el botón titulado <strong>Gráfica</strong>.</li>
+			</ol>
+			<applet class="applet" archive="condensador.jar" code="condensador.CondensadorApplet.class" align="middle" height="350" width="550">LineasApplet aparecerá en un explorador compatible JDK 1.1</applet>
+			
+		</div>
+	</div>
+</div>
+
+<div id="pie">
+	<p>Elaborado en: Enero del 2004 | Ultima actualización: Enero del 2005.</p>		
+</div>
+
+</body></html>

@@ -1,0 +1,143 @@
+/* Cascading Style Sheets für Applet-Seiten */
+/* Letzte Änderung: 2003-11-06              */
+
+body {                                 /* Gesamte Seite */
+  background-color:white;              /* Hintergrund weiß */
+  }
+
+h1 {                                   /* Überschrift */
+  background-color:yellow;             /* Hintergrund gelb */
+  border-style:solid;                  /* Rand durchgezogen */
+  border-width:8pt;                    /* Randbreite 8 pt */
+  border-color:blue;                   /* Rand blau */
+  padding:5pt;                         /* Innenabstand 5 pt */
+  text-align:center;                   /* Text zentriert */
+  font-family:"Times New Roman",Times,serif; /* Zeichensatz "Times New Roman" */
+  font-size:18pt;                      /* Schrifthöhe 18 pt */
+  font-weight:bold;                    /* Fettdruck */
+  }
+
+p {                                    /* Absatz */
+  font-family:Times New Roman,serif;             /* Zeichensatz "Times" */
+  font-size:12pt;                      /* Schrifthöhe 12 pt */
+  font-weight:bold;                    /* Fettdruck */
+  }
+
+ul {                                   /* Ungeordnete Liste */
+  font-family:Times New Roman,serif;
+  font-size:12pt;
+  font-weight:bold;
+  }
+
+ol {                                   /* Geordnete Liste */
+  font-family:Times New Roman,serif;
+  font-size:12pt;
+  font-weight:bold;
+  }
+
+div#Abstand {                          /* Vertikaler Zwischenraum */
+  height:10pt;                         /* Höhe 10 pt */
+  }
+
+a:link {                               /* Link (noch nicht besucht) */
+  color:blue;                          /* Farbe blau */
+  }
+
+a:visited {                            /* Link (schon besucht) */
+  color:blue;                          /* Farbe blau */
+  }
+
+a:hover {                              /* Mauszeiger über dem Link */
+  color:#ff0000;                       /* Farbe rot */
+  text-decoration:underline;           /* Text unterstrichen */
+  }
+
+/* Tabellen */
+
+table.Def {                            /* Rahmen für Definitionen */
+  background-color:#00ff7f;            /* Hintergrund grün */
+  border-style:double;                 /* Rand doppelt */
+  border-width:6pt;                    /* Randbreite 6 pt */
+  border-color:black;                  /* Randfarbe schwarz */
+  }
+
+td.Def {
+  padding-top:5pt;
+  padding-bottom:5pt;
+  padding-left:10pt;
+  padding-right:10pt;
+  text-align:left;
+  font-family:Times,serif;
+  font-size:14pt;
+  color:black;
+  }
+
+table.Satz {                           /* Rahmen für Lehrsätze u. Ä. */
+  background-color:#ff80a0;            /* Hintergrund rot */
+  border-style:double;                 /* Rand doppelt */
+  border-width:6pt;                    /* Randbreite 6 pt */
+  border-color:black;                  /* Randfarbe schwarz */
+  }
+
+td.Satz {
+  padding-top:5pt;
+  padding-bottom:5pt;
+  padding-left:10pt;
+  padding-right:10pt;
+  text-align:left;
+  font-family:Times New Roman,serif;
+  font-size:14pt;
+  color:black;
+  }
+
+table.Formel {                         /* Rahmen für Formeln */
+  background-color:#00e0ff;            /* Hintergrund cyan */
+  border-style:solid;                  /* Rand doppelt */
+  border-width:3pt;                    /* Randbreite 6 pt */
+  border-color:black;                  /* Randfarbe schwarz */
+  }
+
+td.Formel {
+  padding-top:5pt;
+  padding-bottom:5pt;
+  padding-left:10pt;
+  padding-right:10pt;
+  text-align:center;
+  font-family:Times,serif;
+  font-size:14pt;
+  color:black;
+  }
+
+table.Index {                          /* Tabelle für Link zum Index */
+  background-color:black;
+  border-style:double;
+  border-width:4pt;
+  border-color:silver;
+  }
+
+td.Index1 {                            /* Link zum Index (Icon) */
+  background-color:yellow;
+  padding:10pt;
+  text-align:center;
+  }
+
+td.Index2 {                            /* Link zum Index (Text) */
+  background-color:yellow;
+  padding:5pt;
+  text-align:center;
+  font-family:Times New Roman,serif;
+  font-size:12pt;
+  font-weight:bold;
+  }
+
+hr.Trennlinie {                        /* Trennlinie */
+  width:40%;
+  text-align:center;
+  border-bottom:solid thin blue;
+  }
+
+p#Formel {
+  font-family:"Courier New",Courier;
+  font-size:10pt;
+  font-weight:normal;
+  }

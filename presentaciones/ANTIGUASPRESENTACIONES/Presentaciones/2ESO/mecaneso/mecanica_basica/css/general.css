@@ -1,0 +1,113 @@
+body {
+	font-size: medium;
+	font-style: normal;
+	color: #400000;
+	background-image:      url(../imag_comunes/css_fondo_general.jpg);
+	background-attachment: fixed;
+	background-repeat: repeat;
+	font-weight: normal;
+	font-family: Verdana, Arial, georgia, sansSerif;
+}
+P {
+	font-size: medium;
+	font-style: normal;
+	color: #400000;
+	text-indent: 15px;
+	font-weight: normal;
+	font-family: Verdana, Arial, georgia, sansSerif;
+	text-align: justify;
+}
+h1 {
+	font-size: xx-large;
+	font-style: normal;
+	font-weight: bold;
+	color: #000000;
+	background-position: left;
+	font-variant: normal;
+	text-transform: none;
+	text-align: justify;
+}
+h2 {
+	font-size: x-large;
+	font-style: normal;
+	font-weight: bold;
+	color: #000000;
+	background-position: right;
+	font-variant: normal;
+	text-transform: none;
+	text-align: justify;
+	background-repeat: no-repeat;
+}
+h3 {
+	font-size: large;
+}
+h4 {
+	font-size: small;
+}
+h5 {
+	font-size: x-small;
+}
+h6 {
+	font-size: xx-small;
+}
+ul {
+	list-style-position: outside;
+	list-style-image:   url(../imag_comunes/css_topo1a.gif);
+}
+li {
+	margin-bottom: 3px;
+	text-align: justify;
+	font-size: medium;
+}
+ol {
+	list-style-position: outside;
+	list-style-type: decimal;
+}
+ol ol {
+	list-style-position: outside;
+	list-style-type: lower-alpha;
+}
+ul ul {
+	list-style-image:   url(../imag_comunes/css_topo2a.gif);
+}
+ol ol ol {
+	list-style-type: lower-roman;
+}
+ul ul ul {
+	list-style-image:   url(../imag_comunes/css_topo3a.gif);
+}
+.pie_de_pagina {
+	border-top-width: 2px;
+	border-top-style: solid;
+	border-top-color: #993300;
+	text-align: right;
+	padding: 20px;
+}
+.tabla {
+	margin-right: 5px;
+}
+.titulo {
+
+	background-color: #CC0000;
+	padding-top: 2px;
+	padding-right: 5px;
+	padding-bottom: 2px;
+	padding-left: 5px;
+	color: #FFFFCC;
+}
+.subtitulo {
+
+	background-color: #ff0000;
+	padding-top: 2px;
+	padding-right: 5px;
+	padding-bottom: 2px;
+	padding-left: 5px;
+	color: #FFFFCC;
+}
+.navegacion {
+	font-style: italic;
+	margin: 3px;
+}
+table {
+	font-size: medium;
+}

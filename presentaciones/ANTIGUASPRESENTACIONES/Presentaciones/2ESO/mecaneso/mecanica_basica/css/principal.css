@@ -1,0 +1,37 @@
+.titulo {
+	background-color: #A86137;
+	border-top-width: thin;
+	border-right-width: thin;
+	border-bottom-width: medium;
+	border-left-width: medium;
+	border-top-style: outset;
+	border-right-style: outset;
+	border-bottom-style: outset;
+	border-left-style: outset;
+	border-top-color: #FFFFAA;
+	border-right-color: #FFFFAA;
+	border-bottom-color: #7F0000;
+	border-left-color: #7F0000;
+	color: #FFFFCC;
+	padding-top: 2px;
+	padding-right: 5px;
+	padding-bottom: 2px;
+	padding-left: 5px;
+}
+.subtitulo {
+	background-color: #E87B16;
+	border-top-width: thin;
+	border-right-width: thin;
+	border-bottom-width: medium;
+	border-left-width: medium;
+	border-top-style: outset;
+	border-right-style: outset;
+	border-bottom-style: outset;
+	border-left-style: outset;
+	border-top-color: #FFFFAA;
+	border-right-color: #FFFFAA;
+	border-bottom-color: #7F5F00;
+	border-left-color: #7F5F00;
+	padding: 2px 5px;
+	color: #FFFFCC;
+}

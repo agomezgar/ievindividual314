@@ -1,0 +1,255 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN"
+"http://www.w3.org/TR/html4/loose.dtd">
+<html><!-- InstanceBegin template="/Templates/ejercicio_test.dwt" codeOutsideHTMLIsLocked="false" -->
+<head>
+<!-- InstanceBeginEditable name="doctitle" -->
+<TITLE>Autoevaluaci&oacute;n 15</TITLE>
+<!-- InstanceEndEditable -->
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+<link href="../css/general.css" rel="stylesheet" type="text/css">
+<link href="../css/cuestionario.css" rel="stylesheet" type="text/css">
+<script language="JavaScript" type="text/JavaScript">
+<!--
+//ASIGNACION DE VALORES PARA LAS VARIABLES DEL TEST
+respuesta=new Array;
+	for(i=0;i<5;i++) {
+	respuesta[i]=0;
+}
+
+
+//CALCULO E INFORMACION DEL NUMERO DE RESPUESTAS CORRECTAS
+function evaluacion(){
+	calificacion=0;
+	for(i=0;i<5;i++) {
+	calificacion=calificacion+respuesta[i];
+	}
+	if(calificacion==5){
+	MM_showHideLayers('enhorabuena','','show')
+	}
+	else{
+	alert('Tiene '+calificacion+' respuestas correctas de 5 posibles. Repase sus respuestas')
+	}
+}
+
+
+
+function MM_popupMsg(msg) { //v1.0
+  alert(msg);
+}
+
+
+function MM_findObj(n, d) { //v4.01
+  var p,i,x;  if(!d) d=document; if((p=n.indexOf("?"))>0&&parent.frames.length) {
+    d=parent.frames[n.substring(p+1)].document; n=n.substring(0,p);}
+  if(!(x=d[n])&&d.all) x=d.all[n]; for (i=0;!x&&i<d.forms.length;i++) x=d.forms[i][n];
+  for(i=0;!x&&d.layers&&i<d.layers.length;i++) x=MM_findObj(n,d.layers[i].document);
+  if(!x && d.getElementById) x=d.getElementById(n); return x;
+}
+
+function MM_showHideLayers() { //v6.0
+  var i,p,v,obj,args=MM_showHideLayers.arguments;
+  for (i=0; i<(args.length-2); i+=3) if ((obj=MM_findObj(args[i]))!=null) { v=args[i+2];
+    if (obj.style) { obj=obj.style; v=(v=='show')?'visible':(v=='hide')?'hidden':v; }
+    obj.visibility=v; }
+}
+
+function MM_goToURL() { //v3.0
+  var i, args=MM_goToURL.arguments; document.MM_returnValue = false;
+  for (i=0; i<(args.length-1); i+=2) eval(args[i]+".location='"+args[i+1]+"'");
+}
+//-->
+</script>
+<!-- InstanceBeginEditable name="head" --><!-- InstanceEndEditable --><!-- InstanceParam name="ejercicio_anterior" type="boolean" value="true" --><!-- InstanceParam name="ir_ejercicio_anterior" type="URL" value="test_ope14.htm" --><!-- InstanceParam name="ejercicio_siguiente" type="boolean" value="true" --><!-- InstanceParam name="ir_ejercicio_siguiente" type="URL" value="test_ope16.htm" -->
+</head>
+
+<body>
+
+<!-- Contenido de la capa que da la enhorabuena cuando se aciertan todas las preguntas//-->
+<div id="enhorabuena" style="position:absolute; left:231px; top:947px; width:350px; height:164px; z-index:1; background-color: #CCCCCC; layer-background-color: #CCCCCC; visibility: hidden;">
+  <div align="center">
+    <table width="100%" height="200"  border="5" align="center">
+      <tr bgcolor="#FFFFCC">
+        <td valign="middle" class="titulo_ventana">MecanESO</td>
+      </tr>
+      <tr bgcolor="#6666CC">
+        <td bgcolor="#33FF66"><p class="texto_ventana">&iexcl;Enhorabuena!<br>
+            Todas las respuestas son correctas</p>
+            <p class="texto_ventana">
+              <input name="continuar" type=reset class="pregunta" id="continuar" onClick="MM_showHideLayers('enhorabuena','','hide');MM_goToURL('self','test_ope16.htm')" value="Continuar">
+            </p></td>
+      </tr>
+    </table>
+  </div>
+</div>
+<!-- InstanceBeginEditable name="titulo" -->
+		<h2 class="titulo"><a name="titulo"></a>Autoevaluaci&oacute;n 15 </h2>
+<!-- InstanceEndEditable --><!-- InstanceBeginEditable name="cuestionario" -->
+<form method="get" name="form1">
+
+<!--PRIMERA PREGUNTA DEL CUESTIONARIO-->
+  <p class="pregunta">1. El plano inclinado puede considerarse como el padre de un gran grupo de operadores, m&aacute;quinas y herramientas &iquest;cu&aacute;l de los siguientes no pertenece a ese grupo?</p>
+  <table width="100%"  border="0" cellspacing="0" cellpadding="0">
+    <tr>
+      <td width="48" valign="middle"><a href="../operadores/ope_planoinclinado.htm#utilidad" target="_blank"><img src="../imag_comunes/ayuda_test.gif" alt="Ayuda" width="48" height="151" border="0"></a></td>
+      <td>
+        <div class="respuesta" id="test[0]">
+          <label>
+          <input type="radio" name="test0" onClick="(respuesta[0]=1)" value="1">
+        El balanc&iacute;n de un parque infantil <br>
+          </label>
+          <label>
+          <input type="radio" name="test0" onClick="(respuesta[0]=0)" value="2">
+        El tornillo <br>
+          </label>
+          <label>
+          <input type="radio" name="test0" onClick="(respuesta[0]=0)" value="3">
+        Las tijeras <br>
+          </label>
+          <label>
+          <input type="radio" name="test0" onClick="(respuesta[0]=0)" value="4">
+        El hacha</label>
+      </div></td>
+      <td><img src="../imag_comunes/ic_GIF-espaciador.gif" width="10" height="1"></td>
+      <td><img src="imagenes/ejr_ope15-01.gif" alt="Plano inclinado" width="304" height="121"></td>
+    </tr>
+  </table>
+ 
+ <!--Segunda pregunta del cuestionario-->
+ <p class="pregunta">2. &iquest;Cu&aacute;l es la utilidad pr&aacute;ctica de la rampa?</p>
+  <table width="100%"  border="0" cellspacing="0" cellpadding="0">
+    <tr>
+      <td width="48" valign="middle"><a href="../operadores/ope_rampa.htm#utilidad" target="_blank"><img src="../imag_comunes/ayuda_test.gif" alt="Ayuda" width="48" height="151" border="0"></a></td>
+      <td>
+        <div class="respuesta" id="test[1]">
+          <label>
+          <input name="test1" type="radio" onClick="(respuesta[1]=0)" value="1">
+        Elevar objetos con un menor esfuerzo <br>
+          </label>
+          <label>
+          <input type="radio" name="test1" onClick="(respuesta[1]=0)" value="2">
+        Permitir el descenso controlado de objetos<br>
+          </label>
+		  <label>
+          <input type="radio" name="test1" onClick="(respuesta[1]=0)" value="3">
+        Salvar accidentes geogr&aacute;ficos<br>
+		</label>
+          <label>
+		  <input type="radio" name="test1" onClick="(respuesta[1]=1)" value="4">
+        Las tres utilidades anteriores son correctas </label>
+		</div></td>
+      <td><img src="../imag_comunes/ic_GIF-espaciador.gif" width="10" height="1"></td>
+      <td><img src="imagenes/ejr_ope15-02.gif" alt="Rampa" width="447" height="157"></td>
+    </tr>
+  </table>
+ 
+ <!--Tercera pregunta del cuestionario-->
+  <p class="pregunta">3. &iquest;Cu&aacute;l de los objetos siguientes emplea las propiedades de la cu&ntilde;a para mejorar su funcionamiento? </p>
+  <table width="100%"  border="0" cellspacing="0" cellpadding="0">
+    <tr>
+      <td width="48" valign="middle"><a href="../operadores/ope_cuna.htm#utilidad" target="_blank"><img src="../imag_comunes/ayuda_test.gif" alt="Ayuda" width="48" height="151" border="0"></a></td>
+      <td>
+        <div class="respuesta" id="test[2]">
+          <label>
+          <input name="test2" type="radio" onClick="(respuesta[2]=0)" value="1">
+        Torno de alfarero <br>
+          </label>
+          <label>
+          <input type="radio" name="test2" onClick="(respuesta[2]=0)" value="2">
+        Balanza romana <br>
+          </label>
+          <label>
+<input type="radio" name="test2" onClick="(respuesta[2]=1)" value="3">        
+Llave<br>
+          </label>
+          <label>
+          <input type="radio" name="test2" onClick="(respuesta[2]=0)" value="4">
+        Las tres respuestas anteriores son correctas </label>
+      </div></td>
+      <td><img src="../imag_comunes/ic_GIF-espaciador.gif" width="10" height="1"></td>
+      <td><img src="imagenes/ejr_ope15-03.gif" alt="Llave" width="202" height="75"></td>
+    </tr>
+  </table>
+ 
+ <!--Cuarta pregunta del cuestionario-->
+ <p class="pregunta">4. &iquest;Cu&aacute;l de las siguientes aplicaciones NO es propia de la cu&ntilde;a? </p>
+  <table width="100%"  border="0" cellspacing="0" cellpadding="0">
+    <tr>
+      <td width="48" valign="middle"><a href="../operadores/ope_cuna.htm" target="_blank"><img src="../imag_comunes/ayuda_test.gif" alt="Ayuda" width="48" height="151" border="0"></a></td>
+      <td>
+        <div class="respuesta" id="test[3]">
+          <label>
+          <input name="test3" type="radio" onClick="(respuesta[3]=0)" value="1">
+        Combinando dos cu&ntilde;as, cambiar la direcci&oacute;n de un movimiento lineal<br>
+          </label>
+          <label>
+          <input type="radio" name="test3" onClick="(respuesta[3]=0)" value="2">
+        Cortar materiales al aplicar una fuerza sobre el &aacute;ngulo agudo <br>
+          </label>
+          <label>
+          <input type="radio" name="test3" onClick="(respuesta[3]=0)" value="3">
+        Abrir materiales al introducirla en grietas y golpearla con un martillo <br>
+          </label>
+          <label>
+          <input type="radio" name="test3" onClick="(respuesta[3]=1)" value="4">
+        Combinado con una palanca, proporcionar un movimiento giratorio </label>
+      </div></td>
+      <td><img src="../imag_comunes/ic_GIF-espaciador.gif" width="10" height="1"></td>
+      <td>&nbsp;</td>
+    </tr>
+  </table>
+ 
+ <!--Quinta pregunta del cuestionario-->
+ <p class="pregunta">5. &iquest;A qu&eacute; se llama inclinaci&oacute;n de una rampa ? </p>
+  <table width="100%"  border="0" cellspacing="0" cellpadding="0">
+    <tr>
+      <td width="48" valign="middle"><a href="../operadores/ope_rampa.htm" target="_blank"><img src="../imag_comunes/ayuda_test.gif" alt="Ayuda" width="48" height="151" border="0"></a></td>
+      <td>
+        <div class="respuesta" id="test[4]">
+          <label>
+          <input name="test4" type="radio" onClick="(respuesta[4]=1)" value="1">
+        Al &aacute;ngulo que forma la rampa con la horizontal del terreno <br>
+          </label>
+          <label>
+          <input type="radio" name="test4" onClick="(respuesta[4]=0)" value="2">
+        Al &aacute;ngulo que forma la rampa respecto al suelo en el que est&aacute; apoyada <br>
+          </label>
+          <label>
+          <input type="radio" name="test4" onClick="(respuesta[4]=0)" value="3">
+        A la relaci&oacute;n matem&aacute;tica entre la longitud de la rampa y la altura que alcanza <br>
+          </label>
+          <label>
+          <input type="radio" name="test4" onClick="(respuesta[4]=0)" value="4">
+        Al lado hacia el que tiende a caer la rampa cuando est&aacute; m&aacute;l apoyada </label>
+      </div></td>
+      <td><img src="../imag_comunes/ic_GIF-espaciador.gif" width="10" height="1"></td>
+      <td><img src="imagenes/ejr_ope15-05.gif" alt="Rampa" width="323" height="192"></td>
+    </tr>
+  </table>
+ 
+ <!--BOTON DE EVALUACION DEL CUESTIONARIO-->
+ 
+</form>
+<!-- InstanceEndEditable -->
+<div align="center">
+  <table width="100%"  border="0" cellpadding="0" cellspacing="0" class="titulo">
+    <tr>
+      <td align="center">        <input name="evaluar" type='button' class="pregunta" id="evaluar3" onClick="evaluacion()" value="Evaluar">      </td>
+    </tr>
+  </table>
+  <table width="100%"  border="0" cellpadding="0" cellspacing="0" id="referencias">
+    <tr>
+      <td align="left" valign="middle"><img src="../imag_comunes/ic_GIF-espaciador.gif" width="1" height="10"></td>
+      <td align="center" valign="middle">&nbsp;</td>
+      <td align="right" valign="middle">&nbsp;</td>
+    </tr>
+    <tr bgcolor="#CCCCCC">
+      <td align="left" valign="middle"><h6><span class="tabla">&copy;2005 CEJAROSU</span></h6></td>
+      <td align="center" valign="middle"><h6><a href="../index.htm">MecanESO</a> </h6></td>
+      <td align="right" valign="middle"><span class="tabla"><a href="test_ope14.htm"><img src="../imag_comunes/ic_ir_anterior.gif" alt=" Ir al ejercicio anterior" width="37" height="15" border="0"></a><a href="#titulo"><img src="../imag_comunes/ic_ir_arriba.gif" alt="arriba" width="56" height="16" border="0"></a> <a href="test_ope16.htm"><img src="../imag_comunes/ic_ir_siguiente.gif" alt="Ir al ejercicio siguiente" width="37" height="15" border="0"></a></span></td>
+    </tr>
+  </table>
+</div>
+
+<div align="center"></div>
+</body>
+<!-- InstanceEnd --></html>
