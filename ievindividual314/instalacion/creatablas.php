@@ -9,7 +9,7 @@
  * version posterior.
  * 
  * Este programa se esta distribuyendo con la esperanza de que sea util 
- * a la comunidad, pero SIN NINGUNA GARANTIA, ¡RECLAMACIONES, AL MAESTRO 
+ * a la comunidad, pero SIN NINGUNA GARANTIA, Â¡RECLAMACIONES, AL MAESTRO 
  * ARMERO!, que decian en la mili. Si te quedas con la duda, examina los
  * terminos de la licencia GNU
  * 
@@ -26,6 +26,7 @@
 
 
    $link=Conectarse();
+
 $crealumnos="CREATE TABLE IF NOT EXISTS alumnos(
 `alumno` varchar( 6 ) NOT NULL ,
 `apellidos` text NOT NULL ,
@@ -42,25 +43,54 @@ $crealumnos="CREATE TABLE IF NOT EXISTS alumnos(
 `loc` text NOT NULL ,
 `prov` text NOT NULL ,
 `tf` text NOT NULL ,
+`movil` text NOT NULL ,
 `cp` varchar( 6 ) NOT NULL ,
-`padre` text NOT NULL ,
+`apellidospadre` text NOT NULL ,
 `dnipadre` text NOT NULL ,
-`madre` text NOT NULL ,
+`apellidosmadre` text NOT NULL ,
 `dnimadre` text NOT NULL ,
 `pais` text NOT NULL ,
 `nacion` text NOT NULL ,
-`a` varchar( 20 ) NOT NULL ,
-`b` varchar( 20 ) NOT NULL ,
-`c` varchar( 20 ) NOT NULL ,
-`d` varchar( 20 ) NOT NULL ,
-`e` varchar( 20 ) NOT NULL ,
-`f` varchar( 20 ) NOT NULL ,
-`g` varchar( 20 ) NOT NULL ,
-`h` varchar( 20 ) NOT NULL ,
+`emailalumno` varchar( 20 ) NOT NULL ,
+`emailtutor2` varchar( 20 ) NOT NULL ,
+`emailtutor1` varchar( 20 ) NOT NULL ,
+`tftutor1` varchar( 20 ) NOT NULL ,
+`tftutor2` varchar( 20 ) NOT NULL ,
+`moviltutor1` varchar( 20 ) NOT NULL ,
+`moviltutor2` varchar( 20 ) NOT NULL ,
+`apellido1` text NOT NULL,
+`apellido2` text NOT NULL,
+`tipodom` varchar(20) NOT NULL,
+`ntutor1` text NOT NULL,
+`ntutor2` text NOT NULL,
 PRIMARY KEY ( `alumno` )
 ) ";
-mysql_query($crealumnos,$link) or die ("ALGO FALLÓ
+mysql_query($crealumnos,$link) or die ("ALGO FALLÃ“
 ");
+
+$creamatriculas="CREATE TABLE IF NOT EXISTS matriculas(
+`alumno` varchar( 6 ) NOT NULL ,
+`apellidos` text NOT NULL ,
+`nombre` text NOT NULL ,
+`matricula` varchar( 8 ) NOT NULL ,
+`etapa` varchar( 4 ) NOT NULL ,
+`anno` varchar( 4 ) NOT NULL ,
+`tipo` varchar( 2 ) NOT NULL ,
+`estudios` text NOT NULL ,
+`grupo` text NOT NULL ,
+`repetidor` text NOT NULL ,
+`fechamatricula` text NOT NULL ,
+`centro` varchar( 10 ) NOT NULL ,
+`procedencia` varchar( 10 ) NOT NULL ,
+`estadomatricula` text NOT NULL ,
+`fecharesmatricula` text NOT NULL ,
+`numexpcentro` varchar( 5) NOT NULL ,
+
+PRIMARY KEY ( `alumno` )
+) ";
+mysql_query($creamatriculas,$link) or die ("ALGO FALLÃ“
+");
+
 $creanotas="CREATE TABLE IF NOT EXISTS `notas` (
 `MATRICULA` varchar( 7 ) DEFAULT NULL ,
 `ANNO` int( 4 ) DEFAULT NULL ,
@@ -79,26 +109,8 @@ $creanotas="CREATE TABLE IF NOT EXISTS `notas` (
 ) 
 
 ";
-mysql_query($creanotas,$link) or die ("ALGO FALLÓ AL CREAR LA TABLA DE NOTAS");
-$creamatriculas="CREATE TABLE IF NOT EXISTS matriculas(
-`alumno` varchar( 6 ) NOT NULL ,
-`matricula` varchar( 8 ) NOT NULL ,
-`etapa` varchar( 4 ) NOT NULL ,
-`anno` varchar( 4 ) NOT NULL ,
-`tipo` varchar( 2 ) NOT NULL ,
-`estudios` text NOT NULL ,
-`grupo` text NOT NULL ,
-`repetidor` text NOT NULL ,
-`fechamatricula` text NOT NULL ,
-`centro` varchar( 10 ) NOT NULL ,
-`procedencia` varchar( 10 ) NOT NULL ,
-`estadomatricula` text NOT NULL ,
-`numexpcentro` varchar( 5) NOT NULL ,
+mysql_query($creanotas,$link) or die ("ALGO FALLÃ“ AL CREAR LA TABLA DE NOTAS");
 
-PRIMARY KEY ( `alumno` )
-) ";
-mysql_query($creamatriculas,$link) or die ("ALGO FALLÓ
-");
 
 	$tablainformes1="CREATE TABLE IF NOT EXISTS informeindividual(
 `id` int( 6 ) NOT NULL ,
@@ -260,7 +272,8 @@ mysql_query($creamatriculas,$link) or die ("ALGO FALLÓ
 `ref5ciudadania` varchar( 2 ) CHARACTER SET latin1 COLLATE latin1_general_ci NOT NULL ,
 `ref6ciudadania` varchar( 2 ) CHARACTER SET latin1 COLLATE latin1_general_ci NOT NULL ,
 `nccciudadania` text CHARACTER SET latin1 COLLATE latin1_general_ci NOT NULL ,
-`calificacionetica` varchar( 2 ) CHARACTER SET latin1 COLLATE latin1_general_ci NOT NULL ,
+
+`calificacionetica` varchar( 2 ) CHARACTER SET latin1 COLLATE latin1_general_ci NOT NULL ,
 `ptietica` varchar( 2 ) CHARACTER SET latin1 COLLATE latin1_general_ci NOT NULL ,
 `ref1etica` varchar( 2 ) CHARACTER SET latin1 COLLATE latin1_general_ci NOT NULL ,
 `ref2etica` varchar( 2 ) CHARACTER SET latin1 COLLATE latin1_general_ci NOT NULL ,
@@ -308,7 +321,7 @@ mysql_free_result;
 mysql_query($tablaobsrendimiento,$link);
 
 
-mysql_query("insert into tablaobsrendimiento(obsrend1,obsrend2,obsrend3,obsrend4,obsrend5,obsrend6,obsrend7) values ('El alumno/-a tiene mucho interes y trabaja con esfuerzo y motivacion','En general tiene interes y se esfuerza por sacar adelante sus estudios','Aunque tiene interes y motivación podría esforzarse un poco mas','El rendimiento ha ido aumentando a lo largo del curso','El rendimiento ha ido bajando a lo largo del curso','El alumno/-a no esta nada motivado, no tiene interes y no se esfuerza para superar el curso','Falta mucho a clase y eso repercute en su rendimiento')",$link);
+mysql_query("insert into tablaobsrendimiento(obsrend1,obsrend2,obsrend3,obsrend4,obsrend5,obsrend6,obsrend7) values ('El alumno/-a tiene mucho interes y trabaja con esfuerzo y motivacion','En general tiene interes y se esfuerza por sacar adelante sus estudios','Aunque tiene interes y motivaciÃ³n podrÃ­a esforzarse un poco mas','El rendimiento ha ido aumentando a lo largo del curso','El rendimiento ha ido bajando a lo largo del curso','El alumno/-a no esta nada motivado, no tiene interes y no se esfuerza para superar el curso','Falta mucho a clase y eso repercute en su rendimiento')",$link);
 mysql_free_result;
 
 

@@ -1,0 +1,256 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN"
+"http://www.w3.org/TR/html4/loose.dtd">
+<html><!-- InstanceBegin template="/Templates/ejercicio_test.dwt" codeOutsideHTMLIsLocked="false" -->
+<head>
+<!-- InstanceBeginEditable name="doctitle" -->
+<TITLE>Mecanismos 4</TITLE>
+<!-- InstanceEndEditable -->
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+<link href="../css/general.css" rel="stylesheet" type="text/css">
+<link href="../css/cuestionario.css" rel="stylesheet" type="text/css">
+<script language="JavaScript" type="text/JavaScript">
+<!--
+//ASIGNACION DE VALORES PARA LAS VARIABLES DEL TEST
+respuesta=new Array;
+	for(i=0;i<5;i++) {
+	respuesta[i]=0;
+}
+
+
+//CALCULO E INFORMACION DEL NUMERO DE RESPUESTAS CORRECTAS
+function evaluacion(){
+	calificacion=0;
+	for(i=0;i<5;i++) {
+	calificacion=calificacion+respuesta[i];
+	}
+	if(calificacion==5){
+	MM_showHideLayers('enhorabuena','','show')
+	}
+	else{
+	alert('Tiene '+calificacion+' respuestas correctas de 5 posibles. Repase sus respuestas')
+	}
+}
+
+
+
+function MM_popupMsg(msg) { //v1.0
+  alert(msg);
+}
+
+
+function MM_findObj(n, d) { //v4.01
+  var p,i,x;  if(!d) d=document; if((p=n.indexOf("?"))>0&&parent.frames.length) {
+    d=parent.frames[n.substring(p+1)].document; n=n.substring(0,p);}
+  if(!(x=d[n])&&d.all) x=d.all[n]; for (i=0;!x&&i<d.forms.length;i++) x=d.forms[i][n];
+  for(i=0;!x&&d.layers&&i<d.layers.length;i++) x=MM_findObj(n,d.layers[i].document);
+  if(!x && d.getElementById) x=d.getElementById(n); return x;
+}
+
+function MM_showHideLayers() { //v6.0
+  var i,p,v,obj,args=MM_showHideLayers.arguments;
+  for (i=0; i<(args.length-2); i+=3) if ((obj=MM_findObj(args[i]))!=null) { v=args[i+2];
+    if (obj.style) { obj=obj.style; v=(v=='show')?'visible':(v=='hide')?'hidden':v; }
+    obj.visibility=v; }
+}
+
+function MM_goToURL() { //v3.0
+  var i, args=MM_goToURL.arguments; document.MM_returnValue = false;
+  for (i=0; i<(args.length-1); i+=2) eval(args[i]+".location='"+args[i+1]+"'");
+}
+//-->
+</script>
+<!-- InstanceBeginEditable name="head" --><!-- InstanceEndEditable --><!-- InstanceParam name="ejercicio_anterior" type="boolean" value="true" --><!-- InstanceParam name="ir_ejercicio_anterior" type="URL" value="test_mec03.htm" --><!-- InstanceParam name="ejercicio_siguiente" type="boolean" value="true" --><!-- InstanceParam name="ir_ejercicio_siguiente" type="URL" value="test_mec05.htm" -->
+</head>
+
+<body>
+
+<!-- Contenido de la capa que da la enhorabuena cuando se aciertan todas las preguntas//-->
+<div id="enhorabuena" style="position:absolute; left:231px; top:947px; width:350px; height:164px; z-index:1; background-color: #CCCCCC; layer-background-color: #CCCCCC; visibility: hidden;">
+  <div align="center">
+    <table width="100%" height="200"  border="5" align="center">
+      <tr bgcolor="#FFFFCC">
+        <td valign="middle" class="titulo_ventana">MecanESO</td>
+      </tr>
+      <tr bgcolor="#6666CC">
+        <td bgcolor="#33FF66"><p class="texto_ventana">&iexcl;Enhorabuena!<br>
+            Todas las respuestas son correctas</p>
+            <p class="texto_ventana">
+              <input name="continuar" type=reset class="pregunta" id="continuar" onClick="MM_showHideLayers('enhorabuena','','hide');MM_goToURL('self','test_mec05.htm')" value="Continuar">
+            </p></td>
+      </tr>
+    </table>
+  </div>
+</div>
+<!-- InstanceBeginEditable name="titulo" -->
+		<h2 class="titulo"><a name="titulo"></a>Mecanismos 4 </h2>
+<!-- InstanceEndEditable --><!-- InstanceBeginEditable name="cuestionario" -->
+<form method="get" name="form1">
+
+<!--PRIMERA PREGUNTA DEL CUESTIONARIO-->
+  <p class="pregunta">1. &iquest;En cu&aacute;l de los siguientes <span class="respuesta">multiplicadores de velocidad por poleas</span> el eje &quot;R&quot; gira a mayor velocidad que el &quot;M&quot;?</p>
+  <table width="100%"  border="0" cellspacing="0" cellpadding="0">
+    <tr>
+      <td width="48" valign="middle"><a href="../mecanismos/mec_pol_multiplicador.htm#caracteristicas" target="_blank"><img src="../imag_comunes/ayuda_test.gif" alt="Ayuda" width="48" height="151" border="0"></a></td>
+      <td>
+        <div class="respuesta" id="test[0]">
+          <label>
+          <input type="radio" name="test0" onClick="(respuesta[0]=1)" value="1">
+        &quot;A&quot;<br>
+          </label>
+          <label>
+          <input type="radio" name="test0" onClick="(respuesta[0]=0)" value="2">
+        &quot;B&quot;<br>
+          </label>
+          <label>
+          <input type="radio" name="test0" onClick="(respuesta[0]=0)" value="3">
+        &quot;C&quot;<br>
+          </label>
+          <label>
+          <input type="radio" name="test0" onClick="(respuesta[0]=0)" value="4">
+        &quot;D&quot;</label>
+      </div></td>
+      <td><img src="../imag_comunes/ic_GIF-espaciador.gif" width="10" height="1"></td>
+      <td><img src="imagenes/ejr_mec04-01.gif" alt="" width="425" height="174"></td>
+    </tr>
+  </table>
+ 
+ <!--Segunda pregunta del cuestionario-->
+ <p class="pregunta">2. Si la polea &quot;A&quot; est&aacute; unida al motor &iquest;Qu&eacute; nombre recibir&aacute;?</p>
+  <table width="100%"  border="0" cellspacing="0" cellpadding="0">
+    <tr>
+      <td width="48" valign="middle"><a href="../mecanismos/mec_pol_multiplicador.htm#descripcion" target="_blank"><img src="../imag_comunes/ayuda_test.gif" alt="Ayuda" width="48" height="151" border="0"></a></td>
+      <td>
+        <div class="respuesta" id="test[1]">
+          <label>
+          <input name="test1" type="radio" onClick="(respuesta[1]=1)" value="1">
+        Conductora<br>
+          </label>
+          <label>
+          <input type="radio" name="test1" onClick="(respuesta[1]=0)" value="2">
+        Polipasto<br>
+          </label>
+		  <label>
+          <input type="radio" name="test1" onClick="(respuesta[1]=0)" value="3">
+        Movedora<br>
+		</label>
+          <label>
+		  <input type="radio" name="test1" onClick="(respuesta[1]=0)" value="4">
+        Rueda</label>
+		</div></td>
+      <td><img src="../imag_comunes/ic_GIF-espaciador.gif" width="10" height="1"></td>
+      <td><img src="imagenes/ejr_test04-02.gif" alt="Ejercicio sobre poleas" width="180" height="81"></td>
+    </tr>
+  </table>
+ 
+ <!--Tercera pregunta del cuestionario-->
+  <p class="pregunta">3. &iquest;Cu&aacute;ntos metros se desplazar&aacute; hacia arriba la polea de gancho &quot;A&quot; por cada 2 metros que tiremos de la cuerda hacia abajo? </p>
+  <table width="100%"  border="0" cellspacing="0" cellpadding="0">
+    <tr>
+      <td width="48" valign="middle"><a href="../mecanismos/mec_polipasto.htm" target="_blank"><img src="../imag_comunes/ayuda_test.gif" alt="Ayuda" width="48" height="151" border="0"></a></td>
+      <td>
+        <div class="respuesta" id="test[2]">
+          <label>
+          <input name="test2" type="radio" onClick="(respuesta[2]=0)" value="1">
+        2 m <br>
+          </label>
+          <label>
+          <input type="radio" name="test2" onClick="(respuesta[2]=0)" value="2">
+        1,5 m <br>
+          </label>
+          <label>
+          <input type="radio" name="test2" onClick="(respuesta[2]=1)" value="3">
+        1 m <br>
+          </label>
+          <label>
+          <input type="radio" name="test2" onClick="(respuesta[2]=0)" value="4">
+        0,5 m </label>
+      </div></td>
+      <td><img src="../imag_comunes/ic_GIF-espaciador.gif" width="10" height="1"></td>
+      <td><img src="imagenes/ejr_mec04-03.gif" alt="Ejercicio poleas" width="182" height="190"></td>
+    </tr>
+  </table>
+ 
+ <!--Cuarta pregunta del cuestionario-->
+ <p class="pregunta">4. Mediante un <span class="respuesta">multiplicador de velocidad por poleas</span> queremos que el eje &quot;B&quot; se desplace al doble de velocidad que el &quot;A&quot;. Si la polea de &quot;A&quot; tiene 100 mm de di&aacute;metro &iquest;Qu&eacute; di&aacute;metro deber&iacute;a de tener la polea unida al eje &quot;B&quot;? </p>
+  <table width="100%"  border="0" cellspacing="0" cellpadding="0">
+    <tr>
+      <td width="48" valign="middle"><a href="../mecanismos/mec_pol_multiplicador.htm#caracteristicas" target="_blank"><img src="../imag_comunes/ayuda_test.gif" alt="Ayuda" width="48" height="151" border="0"></a></td>
+      <td>
+        <div class="respuesta" id="test[3]">
+          <label>
+          <input name="test3" type="radio" onClick="(respuesta[3]=1)" value="1">
+        50 mm <br>
+          </label>
+          <label>
+          <input type="radio" name="test3" onClick="(respuesta[3]=0)" value="2">
+        100 mm <br>
+          </label>
+          <label>
+          <input type="radio" name="test3" onClick="(respuesta[3]=0)" value="3">
+        200 mm <br>
+          </label>
+          <label>
+          <input type="radio" name="test3" onClick="(respuesta[3]=0)" value="4">
+        300 mm </label>
+      </div></td>
+      <td><img src="../imag_comunes/ic_GIF-espaciador.gif" width="10" height="1"></td>
+      <td><img src="imagenes/ejr_mec04-04.gif" alt="Ejercicio multiplicador de velocidad" width="214" height="98"></td>
+    </tr>
+  </table>
+ 
+ <!--Quinta pregunta del cuestionario-->
+ <p class="pregunta">5. Si cada caja colocada en la palanca pesa 30 kg &iquest;hacia que lado se inclinar&aacute;?</p>
+  <table width="100%"  border="0" cellspacing="0" cellpadding="0">
+    <tr>
+      <td width="48" valign="middle"><a href="../operadores/ope_pal_ley.htm" target="_blank"><img src="../imag_comunes/ayuda_test.gif" alt="Ayuda" width="48" height="151" border="0"></a></td>
+      <td>
+        <div class="respuesta" id="test[4]">
+          <label>
+          <input name="test4" type="radio" onClick="(respuesta[4]=0)" value="1">
+        Hacia el lado &quot;A&quot; <br>
+          </label>
+          <label>
+          <input type="radio" name="test4" onClick="(respuesta[4]=1)" value="2">
+        Hacia el lado &quot;B&quot; <br>
+          </label>
+          <label>
+          <input type="radio" name="test4" onClick="(respuesta[4]=0)" value="3">
+        Se quedar&aacute; como est&aacute;<br>
+          </label>
+          <label>
+          <input type="radio" name="test4" onClick="(respuesta[4]=0)" value="4">
+        Primero hacia el &quot;A&quot; y despu&eacute;s hacia el &quot;B&quot; </label>
+      </div></td>
+      <td><img src="../imag_comunes/ic_GIF-espaciador.gif" width="10" height="1"></td>
+      <td><img src="imagenes/ejr_mec04-05.gif" alt="Ejercicio palancas" width="272" height="124"></td>
+    </tr>
+  </table>
+ 
+ <!--BOTON DE EVALUACION DEL CUESTIONARIO-->
+</form>
+
+
+<!-- InstanceEndEditable -->
+<div align="center">
+  <table width="100%"  border="0" cellpadding="0" cellspacing="0" class="titulo">
+    <tr>
+      <td align="center">        <input name="evaluar" type='button' class="pregunta" id="evaluar3" onClick="evaluacion()" value="Evaluar">      </td>
+    </tr>
+  </table>
+  <table width="100%"  border="0" cellpadding="0" cellspacing="0" id="referencias">
+    <tr>
+      <td align="left" valign="middle"><img src="../imag_comunes/ic_GIF-espaciador.gif" width="1" height="10"></td>
+      <td align="center" valign="middle">&nbsp;</td>
+      <td align="right" valign="middle">&nbsp;</td>
+    </tr>
+    <tr bgcolor="#CCCCCC">
+      <td align="left" valign="middle"><h6><span class="tabla">&copy;2005 CEJAROSU</span></h6></td>
+      <td align="center" valign="middle"><h6><a href="../index.htm">MecanESO</a> </h6></td>
+      <td align="right" valign="middle"><span class="tabla"><a href="test_mec03.htm"><img src="../imag_comunes/ic_ir_anterior.gif" alt=" Ir al ejercicio anterior" width="37" height="15" border="0"></a><a href="#titulo"><img src="../imag_comunes/ic_ir_arriba.gif" alt="arriba" width="56" height="16" border="0"></a> <a href="test_mec05.htm"><img src="../imag_comunes/ic_ir_siguiente.gif" alt="Ir al ejercicio siguiente" width="37" height="15" border="0"></a></span></td>
+    </tr>
+  </table>
+</div>
+
+<div align="center"></div>
+</body>
+<!-- InstanceEnd --></html>

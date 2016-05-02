@@ -1,0 +1,99 @@
+BODY {
+	FONT-SIZE: 11pt; MARGIN: auto; WIDTH: 748px; COLOR: #444; FONT-FAMILY: "Trebuchet MS", Vendana, Arial, sans-serif; BACKGROUND-COLOR: #fff; min-width: 700px
+}
+H1 {
+	MARGIN: 0px; COLOR: #1f579c
+}
+H2 {
+	MARGIN: 0px; COLOR: #444
+}
+H3 {
+	FONT-WEIGHT: normal; MARGIN-BOTTOM: 0px; COLOR: #1f579c
+}
+#contenido {
+	BORDER-RIGHT: #f7fafe 1px solid; PADDING-RIGHT: 10px; BORDER-TOP: #f7fafe 1px solid; PADDING-LEFT: 10px; PADDING-BOTTOM: 10px; MARGIN: auto; BORDER-LEFT: #f7fafe 1px solid; WIDTH: 100%; PADDING-TOP: 10px; BORDER-BOTTOM: #f7fafe 1px solid; POSITION: relative
+}
+.informacion {
+	CLEAR: both; TEXT-ALIGN: justify
+}
+.informacion UL {
+	LIST-STYLE-TYPE: square
+}
+.secciones {
+	BORDER-RIGHT: #83a7c8 1px solid; PADDING-RIGHT: 10px; BORDER-TOP: #83a7c8 1px solid; PADDING-LEFT: 10px; MARGIN-BOTTOM: 20px; PADDING-BOTTOM: 10px; BORDER-LEFT: #83a7c8 1px solid; PADDING-TOP: 10px; BORDER-BOTTOM: #83a7c8 1px solid; BACKGROUND-COLOR: #f7fafe; TEXT-ALIGN: justify
+}
+.secciones H2 {
+	FONT-WEIGHT: normal; MARGIN: 0px
+}
+#pie {
+	TEXT-ALIGN: center
+}
+.mini {
+	FONT-SIZE: 8pt
+}
+#cabecera {
+	PADDING-RIGHT: 10px; PADDING-LEFT: 10px; PADDING-BOTTOM: 10px; WIDTH: 100%; PADDING-TOP: 10px; BORDER-BOTTOM: #83a7c8 7px solid; POSITION: relative; BACKGROUND-COLOR: #f7fafe
+}
+#menu {
+	MARGIN: 0px; COLOR: #999; TEXT-ALIGN: center
+}
+A:link {
+	FONT-WEIGHT: normal; COLOR: #1f579c; TEXT-DECORATION: underline
+}
+A:visited {
+	FONT-WEIGHT: normal; COLOR: #1f579c; TEXT-DECORATION: underline
+}
+A:hover {
+	COLOR: #b81919
+}
+A:active {
+	COLOR: #333
+}
+.temas H3 {
+	COLOR: #993333
+}
+.temas UL {
+	MARGIN-TOP: 0px; LIST-STYLE-TYPE: none; TEXT-DECORATION: none
+}
+STRONG {
+	COLOR: #444
+}
+Q {
+	COLOR: #993333; quotes: '«''»'
+}
+SUB {
+	FONT-SIZE: small
+}
+SUP {
+	FONT-SIZE: small
+}
+.izq {
+	BORDER-RIGHT: #f7f7f7 1px solid; PADDING-RIGHT: 3px; BORDER-TOP: #f7f7f7 1px solid; PADDING-LEFT: 3px; FLOAT: left; PADDING-BOTTOM: 3px; MARGIN: 10px; BORDER-LEFT: #f7f7f7 1px solid; PADDING-TOP: 3px; BORDER-BOTTOM: #f7f7f7 1px solid
+}
+.der {
+	BORDER-RIGHT: #f7f7f7 1px solid; PADDING-RIGHT: 3px; BORDER-TOP: #f7f7f7 1px solid; PADDING-LEFT: 3px; FLOAT: right; PADDING-BOTTOM: 3px; MARGIN: 10px; BORDER-LEFT: #f7f7f7 1px solid; PADDING-TOP: 3px; BORDER-BOTTOM: #f7f7f7 1px solid
+}
+IMG.center {
+	BORDER-RIGHT: #f7f7f7 1px solid; PADDING-RIGHT: 5px; BORDER-TOP: #f7f7f7 1px solid; DISPLAY: block; PADDING-LEFT: 5px; PADDING-BOTTOM: 5px; MARGIN: 5px auto; BORDER-LEFT: #f7f7f7 1px solid; PADDING-TOP: 5px; BORDER-BOTTOM: #f7f7f7 1px solid
+}
+.marco {
+	BORDER-RIGHT: #f7f7f7 1px solid; PADDING-RIGHT: 5px; BORDER-TOP: #f7f7f7 1px solid; PADDING-LEFT: 5px; PADDING-BOTTOM: 5px; MARGIN: 10px; BORDER-LEFT: #f7f7f7 1px solid; PADDING-TOP: 5px; BORDER-BOTTOM: #f7f7f7 1px solid
+}
+.applet {
+	BORDER-RIGHT: #444 2px solid; PADDING-RIGHT: 10px; BORDER-TOP: #444 2px solid; DISPLAY: block; PADDING-LEFT: 10px; PADDING-BOTTOM: 10px; MARGIN: 5px auto; BORDER-LEFT: #444 2px solid; PADDING-TOP: 10px; BORDER-BOTTOM: #444 2px solid
+}
+ACRONYM {
+	CURSOR: help
+}
+TABLE.resultados {
+	BORDER-RIGHT: #83a7c8 1px solid; BORDER-TOP: #83a7c8 1px solid; MARGIN: 20px auto; BORDER-LEFT: #83a7c8 1px solid; WIDTH: 600px; BORDER-BOTTOM: #83a7c8 1px solid
+}
+TABLE.resultados CAPTION {
+	MARGIN: 10px auto; COLOR: #1f579c; TEXT-ALIGN: center
+}
+TABLE.resultados TBODY TD {
+	PADDING-RIGHT: 5px; BORDER-TOP: #83a7c8 1px dotted; PADDING-LEFT: 10px; BACKGROUND: #f7fafe; PADDING-BOTTOM: 5px; COLOR: #666; PADDING-TOP: 5px; TEXT-ALIGN: left
+}
+TABLE.resultados THEAD TH {
+	PADDING-RIGHT: 5px; PADDING-LEFT: 10px; BACKGROUND: #83a7c8; PADDING-BOTTOM: 5px; COLOR: #fff; PADDING-TOP: 5px; TEXT-ALIGN: left
+}

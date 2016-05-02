@@ -1,0 +1,59 @@
+<!doctype html public "-//W3C//DTD HTML 4.0 Transitional//EN"
+"http://www.w3.org/TR/RBC-html40/loose.dtd">
+
+<html>
+
+<head>
+<title>Telescopio Astron&oacute;mico</title>
+<link rel="stylesheet" type="text/css" href="../ph14/applets.css">
+<meta name="description" content="Applet Java: Telescopio Astron&oacute;mico">
+<meta name="author" content="Walter Fendt, Jos&eacute; Miguel Zamarro">
+<meta name="keywords" content="f&iacute;sica, &oacute;ptica, Kepler, telescopio">
+</head>
+
+<body>
+
+<h1>Telescopio Astron&oacute;mico</h1>
+
+<p>Este applet Java simula un <em>telescopio astron&oacute;nmico</em> sencillo, formado por dos lentes llamadas <em>objetivo</em> y <em>ocular</em>. Los rayos de luz que inciden desde la izquierda del objetivo son refractados por el objetivo y despu&eacute;s por el ocular y alcanzan el ojo de la persona que mira a trav&eacute;s del telescopio (a la derecha del ocular). Tenga en cuenta que las l&iacute;neas rojas de la simulaci&oacute;n no corresponden exactamente con los rayos reales que son refractados en ambas superficies de las lentes. La aproximaci&oacute;n simplificadora de lente delgada supone una desviaci&oacute;n en el plano de simetria. Si la distancia focal del objetivo (f<sub>1</sub>) es mayor que la distancia focal del ocular(f<sub>2</sub>), el telescopio produce una imagen aumentada e invertida.</p>
+
+<p>Es posible modificar las distancias focales del objetivo y del ocular de 0.05&nbsp;m a 0.5&nbsp;m utilizando los campos de texto del panel (¡no olvide presionar la tecla &quot;Intro&quot;!. Adem&aacute;s puede modificar la direcci&oacute;n de los rayos arrastrando el rat&oacute;n. El programa calcula los &aacute;ngulos entre los rayos de luz y el eje &oacute;ptico para el objetivo y el ocular (marcados en azul y verde) y el aumento. Como ejemplo el applet muestra las seis estrellas m&aacute;s brillantes de las Pleiades vistas directamente con el ojo (parte inferior izquierda) y a trav&eacute;s del telescopio (parte inferior derecha).</p>
+
+<p align="center">
+<applet code="Refraktor.class" archive="Refraktor.jar, Ph14Spanish.jar" codebase="../ph14_jar" width=700 height=380>
+</applet></p>
+
+<p>El aumento del telescopio puede obtenerse con la siguiente f&oacute;rmula aproximada (para pequños &aacute;ngulos):</p>
+
+<table class="Formel" align="center"><tr><td class="Formel">
+v = – f<sub>1</sub> / f<sub>2</sub>
+</td></tr></table>
+
+<div id="Abstand">&nbsp;</div>
+
+<p id="Formel">
+v .... Aumento<br>
+f<sub>1</sub> ... Distancia focal del objetivo<br>
+f<sub>2</sub> ... Distancia focal del ocular
+</p>
+
+<div id="Abstand">&nbsp;</div>
+
+<hr class="Trennlinie">
+
+<div id="Abstand">&nbsp;</div>
+
+<table class="Index" align="center"><tr><td class="Index1">
+<a href="index.html"><img src="../ph14_gifs/javaphys.gif" alt="F&iacute;sica" hspace=10></a>
+</td></tr><tr><td class="Index2">
+<a href="index.html">Applets F&iacute;sica</a>
+</td></tr></table>
+
+<p>URL: http://www.walter-fendt.de/ph14s/refractor_s.htm<br>
+&copy; Walter Fendt, Marzo 8, 2000<br>
+&copy; Traducci&oacute;n: <a href="mailto:jmz@um.es">Jos&eacute; M. Zamarro</a>, Noviembre 24, 2001<br>
+&Uacute;ltima modificaci&oacute;n: Enero 19, 2003</p>
+
+</body>
+
+</html>

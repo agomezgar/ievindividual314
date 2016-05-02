@@ -1,0 +1,5 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<info>
+	<infoitem key="status" value="final" />
+	<infoitem key="notes" value="01/08/2005: &#xD;Terminado&#xD;20/07/2005: &#xD;Repasar lo que es un operador.&#xD;Incluir una tabla de operadores similar a la creada para los mecanismos. Se podría partir de las máquinas simples y asociar cada operador a la máquina simple de la que proviene, o al reves, indicar las máquinas simples que confluyen en cada operador.&#xD;" />
+</info>

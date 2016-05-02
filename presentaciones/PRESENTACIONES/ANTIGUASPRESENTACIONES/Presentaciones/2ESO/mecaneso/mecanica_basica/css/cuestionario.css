@@ -1,0 +1,41 @@
+.pregunta {
+	font-weight: bold;
+	color: #0000FF;
+}
+.respuesta {
+	font-style: italic;
+}
+.titulo_ventana {
+	font-family: Verdana, Arial, georgia, "comic Sans MS", sansSerif;
+	font-size: x-large;
+	background-color: #006666;
+	text-align: center;
+	color: #FFFFCC;
+	font-weight: bold;
+}
+.texto_ventana {
+	font-family: Verdana, Arial, georgia, "comic Sans MS", sansSerif;
+	font-size: medium;
+	font-style: italic;
+	font-weight: bold;
+	color: #330033;
+	text-align: center;
+	vertical-align: middle;
+}
+.titulo {
+	background-color: #00CC00;
+	padding-top: 2px;
+	padding-right: 5px;
+	padding-bottom: 2px;
+	padding-left: 5px;
+}
+.subtitulo {
+	font-weight: bold;
+	background-color: #33FF33;
+	text-align: right;
+	color: #000000;
+	padding-top: 2px;
+	padding-right: 5px;
+	padding-bottom: 2px;
+	padding-left: 5px;
+}

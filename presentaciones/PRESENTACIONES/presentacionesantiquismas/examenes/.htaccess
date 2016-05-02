@@ -1,0 +1,4 @@
+AuthName "Identifiquese por favor"
+AuthType Basic
+AuthUserFile /etc/claves
+Require valid-user

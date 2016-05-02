@@ -1,0 +1,212 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<HTML><!-- InstanceBegin template="/Templates/maquinas.dwt" codeOutsideHTMLIsLocked="false" -->
+<HEAD>
+<!-- InstanceBeginEditable name="doctitle" -->
+<TITLE>mecanismos</TITLE>
+<!-- InstanceEndEditable -->
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+<!-- InstanceBeginEditable name="head" --><!-- InstanceEndEditable -->
+<link href="../css/general.css" rel="stylesheet" type="text/css">
+<!-- InstanceParam name="nav_condicional" type="boolean" value="true" --><!-- InstanceParam name="ir_anterior" type="boolean" value="true" --><!-- InstanceParam name="ir_siguiente" type="boolean" value="true" --><!-- InstanceParam name="ir_pagina_anterior" type="URL" value="maq_movimientos.htm" --><!-- InstanceParam name="ir_pagina_siguiente" type="URL" value="maq_operadores.htm" -->
+<meta name="author" content="cejarosu">
+<link href="../css/maquinas.css" rel="stylesheet" type="text/css">
+</HEAD>
+
+<BODY>
+<!-- InstanceBeginEditable name="titulo_de_pagina" -->
+<table width="100%"  border="0" cellspacing="0" cellpadding="0">
+  <tr>
+    <td><h2 class="titulo"><a name="titulo"></a>Mecanismos</h2>
+    </td>
+  </tr>
+</table>
+<!-- InstanceEndEditable --><!-- InstanceBeginEditable name="navegacion" -->
+<h6 align="center" class="navegacion"><em><!-- #BeginLibraryItem "/Library/nav_maquinas.lbi" -->
+[<a href="maq_maquinas.htm" target="_self">M&aacute;quinas</a>] [<a href="maq_tipos.htm">Tipos de m&aacute;quinas </a>] [<a href="maq_simple.htm">M&aacute;quinas simples</a>] [<a href="maq_compuesta.htm">M&aacute;quinas compuestas</a>] [<a href="maq_movimientos.htm">Movimientos</a>] [<a href="maq_mecanismos.htm">Mecanismos</a>] [<a href="maq_operadores.htm">Operadores</a>] <!-- #EndLibraryItem --></em></h6>
+<!-- InstanceEndEditable -->
+<h3 class="subtitulo"><a name="descripcion" id="descripcion"></a>Introducci&oacute;n</h3>
+<!-- InstanceBeginEditable name="introduccion" -->
+<p align="justify">Toda <a href="maq_compuesta.htm">m&aacute;quina compuesta</a> es una combinaci&oacute;n de <strong>mecanismos</strong>; y un mecanismo es una combinaci&oacute;n de <a href="maq_operadores.htm">operadores</a> cuya funci&oacute;n es <em>producir, transformar o controlar un movimiento</em>.</p>
+<p align="justify">Los <strong>mecanismos</strong> se construyen encadenando varios <em>operadores</em> mec&aacute;nicos entre si, de tal forma que la salida de uno se convierte en la entrada del siguiente. </p>
+<p align="justify">Por ejemplo, en el taladro de sobremesa se emplean varios mecanismos, analicemos dos de ellos directamente relacionados con los movimientos de la broca (giro y avance):</p>
+<table width="100%"  border="0" cellspacing="0" cellpadding="0">
+  <tr>
+    <td><table width="100%"  border="0" cellspacing="0" cellpadding="0">
+        <tr>
+          <td><div align="justify">
+            <p>El primer mecanismo es  el encargado de  llevar el movimiento giratorio desde el <em>eje conductor</em> al <em>conducido</em> (desde el motor al eje que hace girar la broca). Para construirlo se han empleado diez <a href="../operadores/ope_polea.htm">poleas</a> de diferentes di&aacute;metros, dos ejes y una <a href="../operadores/ope_poleacorrea.htm">correa</a>, formando la denominada <a href="../mecanismos/mec_pol_cajavelocidades.htm">caja de velocidades</a>.</p>
+            <p>Con este sistema se modifican las condiciones de velocidad del eje del motor adapt&aacute;ndolas a las que necesita la broca. </p>
+          </div></td>
+          <td><img src="../imag_comunes/ic_GIF-espaciador.gif" width="10" height="1"></td>
+          <td><img src="imagenes/maq_mecanismo.gif" width="337" height="172"></td>
+        </tr>
+      </table>      <table width="100%"  border="0" cellspacing="0" cellpadding="0">
+        <tr>
+          <td><img src="imagenes/maq_mecanismo02.gif" width="325" height="285"></td>
+          <td><img src="../imag_comunes/ic_GIF-espaciador.gif" width="10" height="1"></td>
+          <td><div align="justify">
+            <p>El segundo mecanismo es el  encargado de desplazar la broca longitudinalmente (hacia arriba o hacia abajo). Este mecanismo consiste en  un <em>eje de avance </em> que accionado por una <em>palanca de control</em> hace girar un <em>pi&ntilde;&oacute;n</em> que a su vez engrana con una <em>cremallera</em> que se desplaza hacia arriba o hacia abajo seg&uacute;n el sentido de giro del pi&ntilde;&oacute;n (mecanismo cremallera-pi&ntilde;&oacute;n). Vemos que con este sistema transformamos un movimiento circular en el extremo de la palanca de control en uno longitudinal de la broca. </p>
+            <p>Este mecanismo encadena los efectos de, al menos, cuatro operadores (algunos no se han representado para simplificar el gr&aacute;fico): eje, <a href="../operadores/ope_palanca.htm">palanca</a>, <a href="../operadores/ope_ruedentada.htm">pi&ntilde;&oacute;n</a> y <a href="../operadores/ope_cremallera.htm">cremallera</a>. </p>
+          </div></td>
+        </tr>
+      </table>    </td>
+  </tr>
+</table>
+<h3 align="justify" class="subtitulo"><a name="mecanismos"></a>Mecanismos para la transformaci&oacute;n de movimientos <a href="#titulo"><img src="../imag_comunes/ic_ir_arriba.gif" width="60" height="15" border="0"></a> </h3>
+<p align="justify">Para dise&ntilde;ar mecanismos para nuestros <em>proyectos de tecnolog&iacute;a</em> necesitamos conocer el movimiento que tenemos (movimiento de entrada) y el que queremos (movimiento de salida) para despu&eacute;s elegir la combinaci&oacute;n de operadores (mecanismo) m&aacute;s adecuada. En el cuadro siguiente se ofrece una clasificaci&oacute;n &uacute;til para abordar los proyectos de Tecnolog&iacute;a. </p>
+<table width="100%"  border="1"  >
+  <tr>
+    <td width="24%" valign="middle" align="center" height="1"><b>Movimiento Entrada</b></td>
+    <td width="23%" valign="middle" align="center" height="1"><b>Movimiento Salida&nbsp;</b></td>
+    <td width="53%" valign="middle" align="center" height="1"><b>Mecanismo que podemos emplear</b></td>
+  </tr>
+  <tr>
+    <td width="24%" rowspan="14" align="center" height="371"><a href="maq_movimientos.htm#giratorio">Giratorio</a></td>
+    <td width="23%" rowspan="6" align="center" height="168"><a href="maq_movimientos.htm#giratorio">Giratorio</a></td>
+    <td width="53%" height="23"><a href="../mecanismos/mec_rueda_friccion.htm">Ruedas de fricci&oacute;n</a></td>
+  </tr>
+  <tr>
+    <td width="53%" height="23">Transmisi&oacute;n por correa (<a href="../mecanismos/mec_pol_multiplicador.htm">Polea-correa</a>)</td>
+  </tr>
+  <tr>
+    <td width="53%" height="23">Transmisi&oacute;n por cadena (<a href="../mecanismos/mec_cadena-pinon.htm">Cadena-pi&ntilde;&oacute;n</a>)</td>
+  </tr>
+  <tr>
+    <td width="53%" height="23"><a href="../mecanismos/mec_ruedentada-linterna.htm">Rueda dentada-Linterna</a></td>
+  </tr>
+  <tr>
+    <td width="53%" height="23"><a href="../mecanismos/mec_eng_multiplicador.htm">Engranajes</a></td>
+  </tr>
+  <tr>
+    <td width="53%" height="23"><a href="../mecanismos/mec_sinfin-pinon.htm">Sinf&iacute;n-pi&ntilde;&oacute;n</a></td>
+  </tr>
+  <tr>
+    <td width="23%" rowspan="2" align="center" height="52"><a href="maq_movimientos.htm#circular">Oscilante</a></td>
+    <td width="53%" height="23"><a href="../mecanismos/mec_levas.htm">Leva-palanca</a></td>
+  </tr>
+  <tr>
+    <td width="53%" height="23"><a href="../mecanismos/mec_excent-biela-palanca.htm">Exc&eacute;ntrica-biela-palanca</a></td>
+  </tr>
+  <tr>
+    <td width="23%" rowspan="3" align="center" height="52"><a href="maq_movimientos.htm#lineal">Lineal alternativo</a></td>
+    <td height="23"><a href="../mecanismos/mec_ciguenal-biela.htm">Cig&uuml;e&ntilde;al-biela</a></td>
+  </tr>
+  <tr>
+    <td width="53%" height="23"><a href="../mecanismos/mec_biela-maniv-embolo.htm">Exc&eacute;ntrica-biela-&eacute;mbolo</a> (<a href="../mecanismos/mec_biela-maniv-embolo.htm">biela-manivela</a>)</td>
+  </tr>
+  <tr>
+    <td width="53%" height="23"><a href="../mecanismos/mec_levas.htm">Leva-&eacute;mbolo</a></td>
+  </tr>
+  <tr>
+    <td width="23%" rowspan="3" align="center" height="81"><a href="maq_movimientos.htm#lineal">Lineal continuo</a></td>
+    <td width="53%" height="23"><a href="../mecanismos/mec_cremallera-pinon.htm">Cremallera-pi&ntilde;&oacute;n</a>&nbsp;</td>
+  </tr>
+  <tr>
+    <td width="53%" height="23"><a href="../mecanismos/mec_tornillo-tuerca.htm">Tornillo-tuerca</a></td>
+  </tr>
+  <tr>
+    <td width="53%" height="23"><a href="../mecanismos/mec_torno.htm">Torno-cuerda</a><a href="../mecanismos/mec_cremallera-pinon.htm"></a></td>
+  </tr>
+</table>
+<table width="100%" border="1"  >
+  <tr>
+    <td width="24%" rowspan="2" align="center"><a href="maq_movimientos.htm#circular">Oscilante</a></td>
+    <td align="center" height="23"><a href="maq_movimientos.htm#giratorio">Giratorio</a></td>
+    <td height="23"><a href="../mecanismos/mec_excent-biela-palanca.htm">Exc&eacute;ntrica-biela-palanca</a></td>
+  </tr>
+  <tr>
+    <td width="23%" align="center" height="23"><a href="maq_movimientos.htm#circular">Oscilante</a><br>      
+      <a href="maq_movimientos.htm#lineal">Lineal alternativo</a></td>
+    <td width="53%" height="23"><a href="../mecanismos/mec_sistemapalancas.htm">Sistema de palancas</a></td>
+  </tr>
+</table>
+<table width="100%" border="1"  >
+  <tr>
+    <td width="24%" rowspan="4" align="center" height="81"><a href="maq_movimientos.htm#lineal">Lineal continuo</a>&nbsp;</td>
+    <td width="23%" rowspan="4" align="center" height="81"><a href="maq_movimientos.htm#giratorio">Giratorio&nbsp;</a></td>
+    <td width="53%" height="23"><a href="../mecanismos/mec_cremallera-pinon.htm">Cremallera-Pi&ntilde;&oacute;n</a> o <a href="../mecanismos/mec_cadena-pinon.htm">Cadena-Pi&ntilde;&oacute;n</a>&nbsp;</td>
+  </tr>
+  <tr>
+    <td width="53%" height="23"><a href="../mecanismos/mec_poleafija.htm#giratorio">Aparejos de poleas&nbsp;</a></td>
+  </tr>
+  <tr>
+    <td height="23"><a href="../mecanismos/mec_rueda_transporte.htm">Rueda</a></td>
+  </tr>
+  <tr>
+    <td width="53%" height="23"><a href="../mecanismos/mec_torno.htm">Torno</a></td>
+  </tr>
+</table>
+<table width="100%" border="1"  >
+  <tr>
+    <td width="24%" rowspan="3" align="center" height="52"><a href="maq_movimientos.htm#lineal">Lineal alternativo&nbsp;</a></td>
+    <td align="center" height="23"><a href="maq_movimientos.htm#giratorio">Giratorio alternativo</a> </td>
+    <td height="23"><a href="../mecanismos/mec_cremallera-pinon.htm">Cremallera-pi&ntilde;&oacute;n</a></td>
+  </tr>
+  <tr>
+    <td width="23%" align="center" height="23"><a href="maq_movimientos.htm#giratorio">Giratorio continuo</a></td>
+    <td width="53%" height="23"><a href="../mecanismos/mec_biela-maniv-embolo.htm">Biela-manivela</a> (<a href="../mecanismos/mec_biela-manivela.htm">exc&eacute;ntrica-biela</a>; <a href="../mecanismos/mec_ciguenal-biela.htm">cig&uuml;e&ntilde;al-biela</a>)</td>
+  </tr>
+  <tr>
+    <td width="23%" align="center" height="23"><a href="maq_movimientos.htm#lineal">Lineal alternativo</a>&nbsp;</td>
+    <td width="53%" height="23"><a href="../mecanismos/mec_sistemapalancas.htm">Sistema de palancas </a></td>
+  </tr>
+</table>
+<h3 class="subtitulo">Otros mecanismos<a href="#titulo"><img src="../imag_comunes/ic_ir_arriba.gif" width="60" height="15" border="0"></a> </h3>
+<p>Adem&aacute;s de lo anterior, para nuestros proyectos mec&aacute;nicos de Tecnolog&iacute;a necesitaremos hacer uso de otros mecanismos que no se dedican a transformar movimientos, sino m&aacute;s bien a controlarlos o facilitarlos. Algunos de los m&aacute;s &uacute;tiles son:</p>
+<table width="100%" border="1"  >
+  <tr align="center">
+    <td height="27"><strong>Mecanismo/operador</strong></td>
+    <td height="27"><strong>Utilidad pr&aacute;ctica </strong></td>
+  </tr>
+  <tr>
+    <td align="center" height="23">Cable o cuerda </td>
+    <td height="23">Transmitir fuerzas entre dos puntos variando la direcci&oacute;n de estas </td>
+  </tr>
+  <tr>
+    <td align="center" height="23"><a href="../operadores/ope_cuna.htm">Cu&ntilde;a</a></td>
+    <td height="23">Evita el movimiento de objetos rodantes. Multiplica la fuerza. </td>
+  </tr>
+  <tr>
+    <td align="center" height="23"><a href="../mecanismos/mec_gatillo.htm">Gatillo</a></td>
+    <td height="23">Permite liberar una energ&iacute;a f&aacute;cilmente.</td>
+  </tr>
+  <tr>
+    <td align="center" height="23"><a href="../operadores/ope_palanca.htm">Palanca</a></td>
+    <td height="23">Permite mover masas m&aacute;s f&aacute;cilmente. </td>
+  </tr>
+  <tr>
+    <td align="center" height="23"><a href="../mecanismos/mec_poleafija.htm">Polea fija de cable </a></td>
+    <td height="23">Reduce el rozamiento en los cambios de direcci&oacute;n de una cuerda. </td>
+  </tr>
+  <tr>
+    <td align="center" height="23"><a href="../mecanismos/mec_polipasto.htm">Polipasto</a></td>
+    <td height="23">Permite mover masas m&aacute;s f&aacute;cilmente. </td>
+  </tr>
+  <tr>
+    <td align="center" height="23"><a href="../operadores/ope_rampa.htm">Rampa</a></td>
+    <td height="23">Gu&iacute;a el desplazamiento de objetos rodantes </td>
+  </tr>
+  <tr>
+    <td align="center" height="23"><a href="../mecanismos/mec_rueda_transporte.htm">Tren de rodadura</a> </td>
+    <td height="23">Facilita el desplazamiento de objetos sobre una superficie. </td>
+  </tr>
+  <tr>
+    <td align="center" height="23"><a href="../mecanismos/mec_trinquete.htm">Trinquete</a></td>
+    <td height="23">Evita que un eje gire en un sentido no deseado.</td>
+  </tr>
+</table>
+<!-- InstanceEndEditable -->
+<table width="100%"  border="0" cellpadding="0" cellspacing="0" id="referencias">
+  <tr>
+    <td align="left" valign="middle"><img src="../imag_comunes/ic_GIF-espaciador.gif" width="1" height="10"></td>
+    <td align="center" valign="middle">&nbsp;</td>
+    <td align="right" valign="middle">&nbsp;</td>
+  </tr>
+  <tr bgcolor="#CCCCCC">
+    <td align="left" valign="middle"><h6><span class="tabla">&copy;2005 CEJAROSU</span></h6></td>
+    <td align="center" valign="middle"><h6><a href="../index.htm">MecanESO</a> </h6></td>
+    <td align="right" valign="middle"><span class="tabla"><a href="maq_movimientos.htm"><img src="../imag_comunes/ic_ir_anterior.gif" alt="Ir al anterior" width="37" height="15" border="0"></a><a href="#titulo"><img src="../imag_comunes/ic_ir_arriba.gif" alt="arriba" width="56" height="16" border="0"></a><a href="maq_operadores.htm"><img src="../imag_comunes/ic_ir_siguiente.gif" alt="Ir al siguiente" width="37" height="15" border="0"></a></span></td>
+  </tr>
+</table>
+</BODY>
+<!-- InstanceEnd --></HTML>

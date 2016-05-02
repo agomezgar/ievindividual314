@@ -181,8 +181,9 @@ id int(2)unsigned NOT NULL auto_increment,
 PRIMARY KEY ( `id` )
 )";
 mysql_query($crearclaves,$link);
+$usuario2=md5($usuario);
 $contra2=md5($contra);
-mysql_query("insert into claves (nombre,contra) values ('$usuario','$contra2')",$link);
+mysql_query("insert into claves (nombre,contra) values ('$usuario2','$contra2')",$link);
 mysql_free_result;
 echo "<meta http-equiv=\"refresh\" content=\"0;URL=elige.php\">";
 ?>

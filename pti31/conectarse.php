@@ -39,7 +39,8 @@
 
 function Conectarse()
 {require('config.php');
-   if (!($link=mysql_connect($servidor,$usuario,$contra)))
+//ATENCION! FALSE,128 DEFIENDE CONTRAR ERRORES LOAD DATA LOCAL INFILE
+   if (!($link=mysql_connect($servidor,$usuario,$contra,false,128)))
    {
       echo "Error conectando a la base de datos.";
       exit();

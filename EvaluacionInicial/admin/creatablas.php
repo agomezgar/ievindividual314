@@ -4,7 +4,6 @@
 header("Content-type: text/html; charset=ISO-8859-1");
    $link=Conectarse();
 mysql_set_charset('utf8');
-
 $crealumnos="CREATE TABLE IF NOT EXISTS alumnos(
 `alumno` varchar( 6 ) NOT NULL ,
 `apellidos` text NOT NULL ,
@@ -16,33 +15,38 @@ $crealumnos="CREATE TABLE IF NOT EXISTS alumnos(
 `locnac` text NOT NULL ,
 `provnac` text NOT NULL ,
 `correspondencia` text NOT NULL ,
-
 `dom` text NOT NULL ,
 `loc` text NOT NULL ,
 `prov` text NOT NULL ,
 `tf` text NOT NULL ,
+`movil` text NOT NULL ,
 `cp` varchar( 6 ) NOT NULL ,
-`padre` text NOT NULL ,
+`apellidospadre` text NOT NULL ,
 `dnipadre` text NOT NULL ,
-`madre` text NOT NULL ,
+`apellidosmadre` text NOT NULL ,
 `dnimadre` text NOT NULL ,
 `pais` text NOT NULL ,
 `nacion` text NOT NULL ,
-`a` varchar( 20 ) NOT NULL ,
-`b` varchar( 20 ) NOT NULL ,
-`c` varchar( 20 ) NOT NULL ,
-`d` varchar( 20 ) NOT NULL ,
-`e` varchar( 20 ) NOT NULL ,
-`f` varchar( 20 ) NOT NULL ,
-`g` varchar( 20 ) NOT NULL ,
-`h` varchar( 20 ) NOT NULL ,
+`emailalumno` varchar( 20 ) NOT NULL ,
+`emailtutor2` varchar( 20 ) NOT NULL ,
+`emailtutor1` varchar( 20 ) NOT NULL ,
+`tftutor1` varchar( 20 ) NOT NULL ,
+`tftutor2` varchar( 20 ) NOT NULL ,
+`moviltutor1` varchar( 20 ) NOT NULL ,
+`moviltutor2` varchar( 20 ) NOT NULL ,
+`apellido1` text NOT NULL,
+`apellido2` text NOT NULL,
+`tipodom` varchar(20) NOT NULL,
+`ntutor1` text NOT NULL,
+`ntutor2` text NOT NULL,
 PRIMARY KEY ( `alumno` )
 ) ";
-mysql_query($crealumnos,$link) or die ("nO HE PODIDO CREAR LA TABLA DE ALUMNOS
+mysql_query($crealumnos,$link) or die ("ALGO FALLÓ
 ");
-
 $creamatriculas="CREATE TABLE IF NOT EXISTS matriculas(
 `alumno` varchar( 6 ) NOT NULL ,
+`apellidos` text NOT NULL ,
+`nombre` text NOT NULL ,
 `matricula` varchar( 8 ) NOT NULL ,
 `etapa` varchar( 4 ) NOT NULL ,
 `anno` varchar( 4 ) NOT NULL ,
@@ -54,13 +58,12 @@ $creamatriculas="CREATE TABLE IF NOT EXISTS matriculas(
 `centro` varchar( 10 ) NOT NULL ,
 `procedencia` varchar( 10 ) NOT NULL ,
 `estadomatricula` text NOT NULL ,
+`fecharesmatricula` text NOT NULL ,
 `numexpcentro` varchar( 5) NOT NULL ,
-
 PRIMARY KEY ( `alumno` )
-)  ";
-mysql_query($creamatriculas,$link) or die ("NO HE PODIDO CREAR LA TABLA DE MATRICULAS...
+) ";
+mysql_query($creamatriculas,$link) or die ("ALGO FALLÓ
 ");
-
 
 $grupos="gruposinf";
 $creargrupos="CREATE TABLE IF NOT EXISTS $grupos(
